@@ -1,4 +1,8 @@
-	.DS_Store
-	.idea/indy-gives.iml
-	.idea/modules.xml
-	.idea/workspace.xml
+	
+	# ignore all files starting with . or ~
+.*
+~*
+.DS_Store
+.idea/indy-gives.iml
+.idea/modules.xml
+.idea/workspace.xml
