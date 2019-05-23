@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.sponsors-section img{
+    width: 10.85%;
+    height: auto;
+    padding: .75%;
+}
+
+.sponsors-section .row{
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.sponsors-section h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin: .25em 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background: #A2A2A2;
+}
+
+
+.footer-contact {
+    font-size: 1.1em;
+    font-weight: 800;
+    margin: 0;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.footer-contact a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-sm {
+    margin-top: 0px;
+}
+
+.footer-sm a {
+    display: block;
+    width: 33%;
+    float: left;
+    padding: 1%;
+}
+
+.footer-sm a:hover img {
+    border: 4px solid grey;
+}
+
+.footer-sm img {
+    max-width: 100%;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    box-sizing: content-box;
+    height: auto;
+    margin: 0px;
+}
+
+.site-map {
+    font-size: 1em;
+    margin: 0 0 0 0px;
+    float: none;
+    list-style: none;
+    padding: 0;
+}
+
+.site-map li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+}
+
+.site-map a {
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-map li:before {
+    display: none;
+}
+
+.site-map li {
+    margin-bottom: 2px
+}
+
+.site-map a {
+    color: inherit;
+}
+
+.site-map ul {
+    list-style: none;
+    padding: 0
+}
+
+.site-map a[href="#"] {
+    display: none
+}
+
+.indy-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-top {
+    padding: 2em 0 1em 0;
+    background: #489dbf;;
+}
+
+.footer-top col-4{
+    border-right: 2px solid #327f9d;
+}
+
+.footer-bottom {
+    background: #4A4A4A;
+    padding: 1em 0 0;
+    color: #B4B4B4;
+}
+
+.footer-bottom a {
+    color: #B4B4B4;
+}
+
+.footer-bottom p{
+    text-align: center;
+
+}
+
+div.form_saved_message div.form_saved_message_emailform form input[type=text] {
+    height: auto !important;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .site-map {
+        text-align:center;
+        border-bottom: 1px solid #39424a;
+        border-top: 1px solid #39424a;
+        padding: 1em 0;
+        margin: 1em 0
+    }
+    footer p {
+       text-align:center
+   }
+}
