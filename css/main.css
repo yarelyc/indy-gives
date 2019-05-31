@@ -43,6 +43,122 @@ a {
 }
 
 /* ==========================================================================
+  Home Reward section
+   ========================================================================== */
+.reward-increase{
+    background: #E96D2C
+}
+
+.reward-increase .col-7, .reward-increase .col-5 {
+    padding: 1em;
+    text-decoration-color: rgba(0, 0, 0, 0.7);
+}
+
+.reward-increase .col-7{
+    padding-top: 4em;
+    padding-right: 3em;
+}
+
+.reward-increase .second p{
+    color: rgba(0, 0, 0, 0.7);
+    margin: .5em 0 1em 0;
+}
+
+.home-rewards .item{
+    display: flex;
+    background: white;
+}
+
+.reward-increase{
+    background-color: #E96D2C;
+    padding: 2em 0em;
+}
+
+.reward-increase .btn {
+    background-color: #F79851;
+    text-transform: uppercase;
+    margin-top: 1em;
+
+}
+.reward-increase .btn:hover{
+    background-color: #ef4023 ;
+}
+.reward-increase p{
+    color: #f1d6c6;
+}
+
+.reward-increase h2{
+    font-family: 'Cubano';
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 1.1;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    margin: 0.5em 0;
+}
+
+.home-rewards {
+    background: white;
+}
+
+.home-rewards .first{
+    width: 60%;
+}
+
+.home-rewares .second{
+    width: 40%;
+}
+.home-rewards .first, .home-rewards .second{
+    position: relative;
+    float: left;
+    flex: 1;
+}
+
+.home-rewards .first img{
+    width: 100%;
+}
+.home-rewards .inner{
+    min-height: 250px;
+    padding: 1em 1em 0em 1.25em;
+
+}
+
+.home-rewards .second{
+    border: 2px dashed #c6bfb5;
+    margin: .75em;
+}
+
+.home-rewards h3{
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Cubano';
+}
+
+.home-rewards h4{
+    text-transform: uppercase;
+    color: white;
+    padding: 0.15em 1em .15em .5em;
+    background: #F79851;
+    width: fit-content;
+    position: absolute;
+    right: -1em;
+    top: .25em;
+    font-weight: 300;
+    font-family: 'Cubano';
+    font-size: 1.25em;
+}
+
+.home-rewards .owl-controls .owl-buttons div{
+    color: white !important;
+    margin: 0em -1.2em !important;
+}
+
+
+
+/* ==========================================================================
    Stats
    ========================================================================== */
 
@@ -123,6 +239,51 @@ body .amt-large.blue{
     text-transform: uppercase;
     margin: 25px 0 0 0;
     display: inline-block;
+}
+#stats-section {
+    margin-bottom: 2em
+}
+
+#stats-section h2 {
+    display: inline-block;
+    background: #52429B;
+    color: #FFF;
+    padding: 5px 25px;
+    font-weight: 400;
+    margin: 0 0 1em 0
+}
+
+.total-raised {
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px
+}
+
+.total-raised span {
+    display: block
+}
+
+.total-raised .stats-label-sm {
+    font-size: 1.125em;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: #6C6C70
+}
+
+
+
+.total-raised .amt-small {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    border-bottom: 1px solid #dad5ed
+}
+
+.stats-label-sm {
+    font-size: 0.875em;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase
 }
 
 .stats-block {
