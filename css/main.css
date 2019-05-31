@@ -1,3 +1,337 @@
+a {
+    color: #D83B20;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 40px;
+}
+
+.row {
+    width: 100%;
+
+}
+
+.home-faqs .btn {
+    font-size: 0.9375em;
+    margin: 0;
+    display: inline-block;
+}
+
+.btn.blue {
+    background: #009FC3;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn {
+    display: inline-block;
+    background: #E96D2C;
+    border: none;
+    padding: .75em 1.5em;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    white-space: pre;
+}
+
+.btn.blue a{
+    color: white;
+
+}
+
+.btn.blue:hover {
+    background: #0DC3EB;
+}
+
+/* ==========================================================================
+   Stats
+   ========================================================================== */
+
+
+.the-numbers h2 {
+    font-family: 'Cubano';
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 1.1;
+    padding: 15px;
+    text-align: center;
+    background: #009FC3;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    margin: 0.75em 0 1em 0;
+}
+
+#stats-section h2 {
+    background: none;
+    color: #009FC3;
+    font-size: 1.5em;
+    text-align: left;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+}
+.total-raised .amt-large {
+    font-family: 'Cubano';
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: #F36F21;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body .amt-large{
+    font-size: 2.25em !important;
+}
+
+body .numbers .amt-large{
+    font-size: 2.25em !important;
+}
+body .amt-large.blue{
+    color: #009FC3;
+}
+
+
+.stats-block .numbers{
+    width: 89%;
+    float: left;
+    padding: .75em 0em;
+}
+
+.stats-block .icons{
+    float: left;
+    width: 6.3%;
+    padding: 1.15em 0em;
+    padding-right: .5em;
+}
+
+.stats-block span{
+    font-weight: 400 !important;
+}
+
+.stats-block .stats-label-sm{
+    font-weight: 700 !important;
+}
+.total-raised .stats-label-sm {
+    color: #4A4A4A;
+    font-size: 1.25em;
+    margin: 5px 0 0 0;
+}
+
+.total-raised .btn {
+    text-transform: uppercase;
+    margin: 25px 0 0 0;
+    display: inline-block;
+}
+
+.stats-block {
+    border-bottom: 1px solid #49BDD7;
+    padding: 15px 0;
+}
+
+.stats-block.last {
+    border-bottom: none;
+}
+
+.totals li {
+    margin: 0;
+}
+
+.totals li:before {
+    display: none;
+}
+
+ul.totals .totals-amt {
+    font-size: 1.9375em;
+}
+
+/* Updated single stats format Oct 2017 */
+
+
+.np-single-stats-2 {
+    text-align: right;
+    line-height: 1.2;
+}
+
+.np-single-stats-2 .amt-big-blue {
+    font-size: 2.5em;
+    color: #009EC3;
+    font-weight: bold;
+    display: block;
+}
+
+.np-single-stats-2 .small-title {
+    font-weight: 300;
+}
+
+
+hr.orange {
+    background: #FA6A34;
+    border: none;
+    height: 3px;
+}
+.np-single-stats-2 .amt-total-raised {
+    display: block;
+    color: #FA6A34;
+    font-weight: bold;
+    font-size: 2.75em;
+}
+
+.np-single-stats-2 .total-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Donors
+   ========================================================================== */
+
+.home-young-donors {
+    background: #FF792A;
+}
+
+.home-young-donors p, .home-young-donors h2, .home-young-donors h3, .home-young-donors a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.home-young-donors a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.home-young-donors h2 {
+    text-transform: uppercase;
+    font-size: 2.25em;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+
+.home-young-donors img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.home-young-donors .col-5 {
+    border-left: 1px solid #FFE4D4;
+}
+
+.home-young-donors .row {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================================================
+   Latest News
+   ========================================================================== */
+
+ .latest-news {
+     margin-top: 2em
+ }
+
+ .latest-news .the-date {
+     font-size: 1.5em;
+     margin: 0 0 -3px -3px;
+     display: inline-block
+ }
+
+ .latest-news p {
+     font-size: 0.875em
+ }
+
+ .latest-news h3 {
+     background: #52429B;
+     color: #FFF;
+     display: inline-block;
+     padding: 3px 15px
+ }
+
+ .latest-news h4 {
+     margin: 0;
+     font-size: 1.125em;
+     line-height: 1.3
+ }
+
+ .latest-news h4 a {
+     text-decoration: none;
+     color: inherit
+ }
+ .latest-news a:hover {
+    text-decoration: none;
+}
+
+.latest-news {
+    background: #E0F2F8;
+    padding: 1em 0 2em 0;
+    margin-top: 0;
+}
+
+.latest-news .col-6:nth-of-type(1) {
+    padding-right: 40px;
+}
+
+.latest-news .col-6:nth-of-type(2) {
+    padding-left: 40px
+}
+
+.latest-news h3 {
+    font-family: 'Cubano';
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 1.1;
+    text-align: center;
+    color: #009FC3;
+    margin-bottom: 48px;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.latest-news h4, .home-faqs h4 {
+    font-size: 20px;
+    line-height: 1.3;
+}
+.home-faqs h4 {
+    margin-bottom: .25em;
+}
+
+.latest-news .read-more {
+    margin-top: 1em;
+    display: block;
+}
+.latest-news a:hover {
+    text-decoration: none;
+}
+
+.home-faqs {
+    font-size: 1.125em;
+}
+
+.home-faqs .btn {
+    font-size: 0.9375em;
+    margin: 0;
+    display: inline-block;
+}
+.donate-np-list li#np_li-5494 {
+    display: none;
+}
+@media screen and (max-width: 640px) {
+    .latest-news .col-6 {
+        margin-bottom: 48px;
+    }
+}
+
+
+
+
 /* ==========================================================================
    Footer
    ========================================================================== */
