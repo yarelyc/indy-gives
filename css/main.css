@@ -1,3 +1,294 @@
+/* ==========================================================================
+   Global Elements
+   ========================================================================== */
+
+/*Hide donate in masthead*/
+
+.masthead .donate-btn {
+    display: none;
+}
+
+
+
+.page-content .row [class*="col-"]:first-child {
+    margin-left: 0;
+}
+.page-content .row .col-4 {
+    margin-left: 2.564102564102564%;
+}
+
+.btn {
+    display: inline-block;
+    background: #E96D2C;
+    border: none;
+    padding: .75em 1.5em;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    white-space: pre;
+}
+
+.btn:hover {
+    background: #EE4123;
+}
+
+.btn.blue {
+    background: #009FC3;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn.blue:hover {
+    background: #0DC3EB;
+}
+
+/* Tables */
+
+table {
+    border: 1px solid #cacaca;
+    margin-bottom: 1em;
+}
+
+table th {
+    background: #009FC3;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875em;
+}
+
+table td {
+    border-bottom: 1px solid #cacaca;
+}
+
+table tr:nth-child(odd) td {
+    background: #EFEDEA;
+}
+
+table td, table th {
+    padding: 15px 20px;
+}
+
+/* Lists */
+
+.col-8 ol, .col-9 ol {
+    list-style-position: inside;
+}
+
+.col-8 ol, .col-8 ul, .col-9 ol, .col-9 ul {
+    padding: 0;
+    margin: 0.25em 0 1.5em 0;
+}
+
+.col-8 ol ol, .col-8 ul ul,.col-9 ol ol, .col-9 ul ul {
+    margin: 0 0 0 15px;
+}
+
+.col-8 ol ol li, .col-9 ol ol li {
+    list-style: upper-alpha;
+    font-style: italic;
+    margin-left: 40px;
+}
+
+.col-8 ul li, .col-9 ul li {
+    margin-left: 20px;
+}
+
+.col-8 ul ul li, .col-9 ul ul li {
+    font-style: italic;
+}
+
+.col-8 ul li, .col-9 ul li {
+    position: relative;
+    list-style: none;
+}
+
+.col-8 ul li:before, .col-9 ul li:before {
+    position: absolute;
+    left: -16px;
+    top: 9px;
+    content: " ";
+    width: 7px;
+    height: 7px;
+    background: #F36F21;
+}
+
+/* Blockquote */
+
+blockquote {
+    background: #009FC3 url('../images/icon-pattern.png?v=2') repeat-y left center;
+    color: #FFF;
+    font-size: 1.5em;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    padding: 25px 15px 25px  84px;
+    margin: 2em 0;
+    border-radius: 3px;
+}
+
+blockquote em {
+    color: #FFF;
+    margin: 0;
+}
+
+blockquote p:before, blockquote p:after {
+    display: none;
+}
+
+blockquote p:last-child {
+    margin: 0 0 5px 0
+}
+
+/* FAQs and Collapsers */
+
+.page-id-33 .page-content h1 {
+    font-weight: 300;
+}
+
+
+body .collapseomatic {
+    display: block;
+    color: #009fc3;
+    font-size:1.1em;
+    font-weight: 700;
+    background-position: 0 16px;
+    padding: 10px 24px;
+    border-top: 1px solid #e0f2f8;
+}
+
+div.collapseomatic_excerpt, div.collapseomatic_content {
+    padding: 0 0 24px 10px;
+}
+/* Navigation */
+
+.main-nav {
+    margin: 27px 0 0 25px;
+    text-align: left;
+    float: left;
+    padding: 0;
+    font-size: 0.9375em;
+}
+
+.main-nav ul li {
+    margin: 0;
+}
+.main-nav ul li:before {
+    display: none;
+}
+
+.main-nav ul li a {
+    border-right: none;
+    padding: 8px 10px;
+}
+
+.main-nav ul li a:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.main-nav ul ul li {
+    background: #C5361D;
+}
+
+.main-nav ul ul li:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.menu-item-has-children:after {
+    position: absolute;
+    content: "\25BC";
+    color: #FFF;
+    right: 12px;
+    top: 12px;
+    font-size: 10px;
+}
+
+.navicon {
+    font-size: 1.25em;
+    top: 21px;
+}
+
+/* Sub navigation */
+
+.subnav ul li {
+    margin: 0;
+}
+.subnav ul li:before {
+    display: none;
+}
+
+.menu-mc_gives-container {
+    float: left;
+}
+
+#countdown {
+    background: #282828;
+    border-radius: 0;
+    min-width: 210px;
+    right: 25px;
+}
+.home #countdown {right: 25px;}
+.cd-segment {
+    position: relative;
+    padding: 2px 12px;
+    color: #FFF;
+    border-right: none;
+}
+
+.cd-segment:after {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    content: ':';
+    color: #a2a2a2;
+}
+
+.countdown-label {
+    color: #a2a2a2;
+    font-size: 0.625em;
+    text-transform: uppercase;
+}
+.boost-reward-section {
+    color:#f38809;
+}
+.cd-segment:nth-of-type(4):after {
+    display: none;
+}
+
+.countdown-text {
+    display: none;
+}
+.boost-section {
+    display: none;
+}
+.donate-btn {
+    font-family: 'Cubano';
+    background: #E96D2C;
+    float: right;
+    margin-top: -44px;
+    position: relative;
+    padding: 1px;
+    margin-right: 2px;
+    font-size: 1.125em;
+}
+
+.donate-btn:hover {
+    background: #EE4123;
+}
+.masthead {
+    border: none;
+}
+
+.masthead .donate-btn {
+    padding: 12px 0;
+    line-height: 1;
+}
+
+a.cart-btn {
+    position: relative;
+    top: 10px;
+    right: -13px;
+    color: #FFF;
+}
+
+/* Check Here */
 a {
     color: #D83B20;
 }
@@ -41,6 +332,399 @@ a {
 .btn.blue:hover {
     background: #0DC3EB;
 }
+/* ==========================================================================
+   Indy Give Custom Styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Cubano';
+    src: url('../fonts/cubano-regular-webfont.eot');
+    src: url('../fonts/cubano-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cubano-regular-webfont.woff') format('woff'),
+        url('../fonts/cubano-regular-webfont.ttf') format('truetype'),
+        url('../fonts/cubano-regular-webfont.svg#Cubano') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   Font Overrides
+   ========================================================================== */
+
+body, h2, h3, h4, h5, h6, .btn, .main-nav {
+    font-family: "proxima-nova", sans-serif;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 40px;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* Font smoothing */
+
+h1, h2, h3, h4, h5, h6, .donate-btn {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Cubano';
+    color: #E96D2C;
+    /*color: #FA6A34;*/
+    font-size: 3.75em;
+    line-height: 1.0625em;
+    margin: 1em 0 0.25em 0;
+    border: none;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+}
+
+h2, h3 {
+    color: #009fc3;
+    text-transform: uppercase;
+}
+
+h4, h5, h6 {
+    color: #4a4a4a;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1.125em;
+}
+
+.masthead h1 {
+    margin-top: 75px;
+    line-height: 1;
+    /*
+      word-wrap: break-word;
+      -ms-word-break: break-all;
+       word-break: break-word;
+    */
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #D83B20;
+}
+.logo {
+    max-width: 175px;
+    height: auto;
+    margin: 15px 0 15px 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header[role="banner"] {
+    position: relative;
+    background: #DE322B;
+    background: #D83B20;
+}
+
+header[role="banner"] .donate-btn {
+    position: absolute;
+    background: #E96D2C;
+    right: 25px;
+    padding: 7px;
+    top: auto;
+    bottom: 0;
+    margin: 0;
+}
+
+header[role="banner"] .donate-btn:hover {
+    background: #ff7625;
+}
+
+header[role="banner"] .donate-btn span {
+    position: absolute !important;
+    bottom: -24px !important;
+    font-size: 14px !important;
+    display: block;
+    margin: 0 auto;
+    background: #eaeaea;
+    border-radius: 0 0 3px 3px;
+    left: 0;
+    right: 0;
+    color: #D83B20;
+    font-family: "proxima-nova", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    clear: both;
+    padding: 5px 0;
+    line-height: 1;
+}
+
+/* Header search button */
+
+a.search-pop {
+    position: relative;
+    display: inline-block;
+    left: 35px;
+    font-size: 1.375em;
+    top: 10px;
+}
+
+.search-pop .icon-search {
+    color: #FFF;
+}
+
+/* Search pop-up */
+.search-modal .searchform {
+    width: 100%;
+    max-width: 640px;
+}
+.search-modal input[type="search"] {
+    width: 100%;
+    font-size: 2.5em;
+    padding: 20px;
+}
+.search-modal .searchform .submit {
+    top: 20px;
+    right: 0;
+}
+
+.remodal-wrapper.search {
+    bottom: unset;
+    top: 60px;
+}
+
+
+.at-share-tbx-element .at-share-btn {
+    padding: 8px !important;
+}
+
+.addthis_inline_share_toolbox_nh0q{
+    display: inline-block !important;
+}
+
+
+
+
+
+/* ==========================================================================
+   Homepage Header
+   ========================================================================== */
+
+/* Indy Hero */
+
+.indy-hero {
+    position: relative;
+    padding: 35px 0;
+    color: #FFF;
+    background: #37ADCD;
+    background: -moz-linear-gradient(top,  #249cc1 0%, #49bed8 100%);
+    background: -webkit-linear-gradient(top,  #249cc1 0%,#49bed8 100%);
+    background: linear-gradient(to bottom,  #249cc1 0%,#49bed8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#249cc1', endColorstr='#49bed8',GradientType=0 );
+}
+
+.hero-image {
+    position: absolute;
+    bottom: 0;
+    max-width: 39.17094017094017%;
+    height: auto;
+    max-height: 98%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.hero-content {
+    width: 58.26495726495726%;
+    float: left;
+    margin-left: 42.17094017094017%;
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+.hero-content .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.hero-pre-title, hero-title {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}
+
+.hero-pre-title {
+    display: block;
+    font-size: 2.5em;
+    font-family: 'Oleo Script', cursive;
+    margin: 0 0 -25px 0;
+}
+
+img.live-here-text {
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: 'Cubano';
+    font-size: 5em;
+    display: block;
+    margin: 0 auto 10px auto;
+    line-height: 0.9;
+}
+
+.hero-byline {
+    display: block;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+.hero-text {
+    margin-bottom: 2em;
+}
+
+
+/* ==========================================================================
+  Home Small & Mighty section
+   ========================================================================== */
+   .mighty-three {
+       text-align: center;
+       padding: 10px 25px 50px 25px;
+   }
+
+   .m3 {
+       display: block;
+       text-decoration: none;
+       color: inherit;
+       text-align: left;
+       box-shadow: 0 2px 3px rgba(0,0,0,0.23);
+       transition: all 0.3s ease-in-out;
+   }
+
+   .m3:hover {
+       background: #EFEDEA;
+   }
+
+   .m3:hover .m3-img:after, .m3:hover .m3-img:before {
+       opacity: 1;
+   }
+
+   .m3:hover .m3-img:after {
+       transform: translateY(0);
+   }
+   .m3-img {
+       position: relative;
+   }
+
+   .m3-img:after, .m3-img:before {
+       transition: all 0.3s ease-in-out;
+   }
+   .m3-img:before {
+       opacity: 0;
+       position: absolute;
+       content:'';
+       width: 100%;
+       height: 100%;
+       background: rgba(243,111,33,0.8);
+       color: #FFF;
+
+   }
+   .m3-img:after {
+       opacity: 0;
+       position: absolute;
+       top: 40%;
+       line-height: 1.3;
+       left: 0;
+       right: 0;
+       width: 100%;
+       text-transform: uppercase;
+       font-weight: 700;
+       text-align: center;
+       content:'Learn more \A About Us';
+       white-space: pre;
+       color: #FFF;
+       transform: translateY(10px);
+   }
+   .m3-img img {
+       width: 100%;
+       height: auto;
+       display: block;
+   }
+
+   .m3-description {
+       font-size: 0.875em;
+       padding: 25px;
+   }
+
+   .m3-description p {
+       margin: 0 0 0.5em 0;
+   }
+
+   .m3 h3 {
+       color: #F36F21;
+       font-size: 1.25em;
+       font-weight: 800;
+       line-height: 1.2;
+       margin: 0.5em 0;
+   }
+
+   /* M3 Force thumbnails to be the same size */
+
+   .m3-img {
+       background-size: cover;
+       -webkit-background-size: cover;
+       background-position: center top;
+       width: 100%;
+       padding-bottom: 75%;
+   }
+
+
+   .mighty-three h2 {
+       font-family: 'Cubano';
+       font-weight: normal;
+       font-size: 3em;
+       line-height: 1.1;
+       text-align: center;
+       color: #009FC3;
+       padding: 10px 0;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+   }
+   .mighty-three h2 + p {
+       margin-bottom: 48px;
+   }
+
+
 
 /* ==========================================================================
   Home Reward section
