@@ -482,7 +482,7 @@ table td, table th {
 /* Blockquote */
 
 blockquote {
-    background: #009FC3 url('assets/images/icon-pattern.png') repeat-y left center;
+    background: #009FC3 url('../assets/images/icon-pattern.png') repeat-y left center;
     color: #FFF;
     font-size: 1.5em;
     -webkit-font-smoothing: antialiased;
@@ -2199,7 +2199,7 @@ hr.orange {
 }
 
 .favorite-this-icon {
-    background-image: url('../images/favoriteheart02.png');
+    background-image: url('../assets/images/icons/favoriteheart02.png');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 42px;
@@ -2209,7 +2209,7 @@ hr.orange {
 }
 
 .favorite-this-btn.favored .favorite-this-icon {
-    background-image: url('../images/favoriteheart02-active.png');
+    background-image: url('../assets/images/icons/favoriteheart02-active.png');
 }
 
 .nonprofits_fv_btn{
@@ -2340,12 +2340,12 @@ share-button:before {
 }
 
 .np-box .favorites-title .favorite-this-icon-w.favored {
-    background-image: url(../images/favoriteheart02-active.png);
+    background-image: url(../assets/images/icons/favoriteheart02-active.png);
 }
 
 
 .favorite-this-icon-w {
-    background-image: url(../images/favoriteheart02w.png);
+    background-image: url(../assets/images/icons/favoriteheart02w.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 42px;
@@ -2408,6 +2408,30 @@ share-button:before {
 {
     opacity: .1 !important;
 }
+
+.height-container{
+  position: relative;
+  height: 1536.06px;
+}
+
+.box-position-row1{
+  position: absolute;
+  left: 0%;
+  top: 0px;
+}
+
+.box-position-row2{
+  position: absolute;
+  left: 49.5223%;
+  top: 0px;
+}
+
+.box-position-row3{
+  position: absolute;
+  left: 0%; top: 488px;"
+}
+
+
 
 /* Remove coloring */
 
@@ -3816,5 +3840,6 @@ div.sidebar-bottom{
     .home-rewards h3 {
         font-size: 1.1em;
     }
+
 
 }
