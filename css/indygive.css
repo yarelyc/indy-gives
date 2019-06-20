@@ -2314,6 +2314,24 @@ share-button:before {
     cursor: pointer;
 }
 
+.position-box_1{
+  position: absolute; 
+  left: 0%; 
+  top: 0px;
+}
+
+.position-box_2{
+  position: absolute;
+  left: 49.5223%; 
+  top: 0px;"
+}
+
+.position-box_3{
+  position: absolute;
+  left: 0%; 
+  top: 488px;
+}
+
 .favorites-title {
     background: none;
     text-transform: uppercase;

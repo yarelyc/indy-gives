@@ -93,9 +93,7 @@
         <a class="search-pop" href="#search-pop"><i class="icon-search" aria-hidden="true"></i></a>
         <!-- //search button -->
       </nav>
-
     </div>
-
   </header>
   <!-- End of Menu -->
 
@@ -157,7 +155,7 @@
         <div class="col-9 masonary-container height-container" >
           <div class="grid-sizer"></div>
           <div class="gutter-sizer"></div>
-          <div class="np-box" style="position: absolute; left: 0%; top: 0px;">
+          <div class="np-box position-box_1" >
             <a href="https://indygive.com/nonprofit/colorado-springs-food-rescue/">
               <img width="1024" height="564" src="https://indygive.com/wp-content/uploads/2018/04/CSFR-replacement-photo-1024x564.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://indygive.com/wp-content/uploads/2018/04/CSFR-replacement-photo-1024x564.jpg 1024w, https://indygive.com/wp-content/uploads/2018/04/CSFR-replacement-photo-500x275.jpg 500w, https://indygive.com/wp-content/uploads/2018/04/CSFR-replacement-photo-768x423.jpg 768w, https://indygive.com/wp-content/uploads/2018/04/CSFR-replacement-photo-600x330.jpg 600w, https://indygive.com/wp-content/uploads/2018/04/CSFR-replacement-photo-800x441.jpg 800w"
                 sizes="(max-width: 1024px) 100vw, 1024px" data-wp-pid="7037">
@@ -172,7 +170,7 @@
               <h5 class="favorite-this-icon-w np_favorite " data-id="5257"></h5>
             </div>
           </div>
-          <div class="np-box" style="position: absolute; left: 49.5223%; top: 0px;">
+          <div class="np-box position-box_2" >
             <a href="https://indygive.com/nonprofit/manitou-art-center/">
               <img width="1024" height="683" src="https://indygive.com/wp-content/uploads/2018/04/MAC_image2_180416-4-1024x683.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://indygive.com/wp-content/uploads/2018/04/MAC_image2_180416-4-1024x683.jpg 1024w, https://indygive.com/wp-content/uploads/2018/04/MAC_image2_180416-4-450x300.jpg 450w, https://indygive.com/wp-content/uploads/2018/04/MAC_image2_180416-4-768x512.jpg 768w, https://indygive.com/wp-content/uploads/2018/04/MAC_image2_180416-4-600x400.jpg 600w, https://indygive.com/wp-content/uploads/2018/04/MAC_image2_180416-4-800x533.jpg 800w"
                 sizes="(max-width: 1024px) 100vw, 1024px" data-wp-pid="6713">
@@ -189,7 +187,7 @@
             </div>
           </div>
 
-          <div class="np-box" style="position: absolute; left: 0%; top: 488px;">
+          <div class="np-box position-box_3">
             <a href="https://indygive.com/nonprofit/pikes-peak-justice-and-peace-commission/">
               <img width="960" height="636" src="https://indygive.com/wp-content/uploads/2017/04/JP_image2_041717-1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://indygive.com/wp-content/uploads/2017/04/JP_image2_041717-1.jpg 960w, https://indygive.com/wp-content/uploads/2017/04/JP_image2_041717-1-453x300.jpg 453w, https://indygive.com/wp-content/uploads/2017/04/JP_image2_041717-1-768x509.jpg 768w, https://indygive.com/wp-content/uploads/2017/04/JP_image2_041717-1-600x398.jpg 600w, https://indygive.com/wp-content/uploads/2017/04/JP_image2_041717-1-800x530.jpg 800w"
                 sizes="(max-width: 960px) 100vw, 960px" data-wp-pid="5240">
@@ -233,12 +231,8 @@
                 sizes="(max-width: 1024px) 100vw, 1024px" data-wp-pid="6653">
               <h3 class="np-title">RAWtools</h3>
               <p class="np-info">
-
                 <!-- Nonprofit short description excerpt here -->
                 We're turning swords into plowshares and fear into love. By taking donated weapons and turning them into garden tools, RAWtools is addressing gun violence like no other…
-                <!--
-                           Year Founded: <strong>2013</strong><br>                                                                                                 Phone: <strong>(719) 629-7040</strong><br>            -->
-
               </p>
 
             </a>
@@ -375,6 +369,43 @@
     <script src="assets/js/owl.carousel.min.js"></script>
   </footer>
   <!--End of Footer -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            setTimeout(function () {
+                $masonary_container = $('.masonary-container');
+                if ($masonary_container.length) {
+                    $masonary_container.masonry({
+                        itemSelector: '.np-box',
+                        percentPosition: true,
+                        masonry: {
+    // use outer width of grid-sizer for columnWidth
+                            columnWidth: '.grid-sizer',
+                            horizontalOrder: true,
+                            fitWidth: true
+                        }
+                    });
+    //                $(".masonary-container").layout();
+                }
+            }, 3000);
+            setTimeout(function () {
+                if ($('.pdfg-print').length > 0) {
+                    $('.pdfg-print').removeClass('opacity-0');
+                    $('.pdfg-print-before').remove();
+                }
+            }, 5000);
+        });
+    </script>
+    <style>
+        .masonary-container .grid-sizer{
+            width: 48%;
+        }
+        .masonary-container .np-box{
+            /*min-height: 0px;*/
+        }
+    </style>
+
 
 
 </body>
