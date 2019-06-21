@@ -45,13 +45,13 @@
     </div>
 
     <div class="row">
-      <div class="col-8" style="padding: .5em;">
+      <div class="col-8 adding-padding">
         <div></div>
         <div class="nonprofit-slider slick-initialized slick-slider">
           <div class="slick-list draggable">
-            <div class="slick-track" style="opacity: 1; width: 566px; transform: translate3d(0px, 0px, 0px);">
+            <div class="slick-track transform-style">
               <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 566px;">
-                <img class="slider-image" src="https://indygive.com/wp-content/uploads/2018/04/CSFR-replacement-photo.jpg">
+                <img class="slider-image" src="assets/images/background/CSFR-replacement-photo.jpg">
               </div>
             </div>
           </div>
@@ -82,8 +82,11 @@
         <div class="np-single-stats">
 
           <!-- Donate Now -->
-          <div id="response_wrapper"> <span style="display:none;">
-              Donation added to Cart. <a href="https://indygive.com/donate">View Cart</a> </span> </div>
+          <div id="response_wrapper">
+            <span class="display-none" >
+              Donation added to Cart. <a href="https://indygive.com/donate">View Cart</a>
+            </span>
+          </div>
 
 
           <div class="row">
@@ -91,66 +94,38 @@
               <input type="text" name="single_donation_amount" id="single_donation_amount_add_to_cart_value" class="single_donation_amount_add_to_cart_value" placeholder="$ ENTER DONATION HERE" value="">
             </div>
             <div class="col-5">
-
               <a href="#" id="lnk_donate_add_to_cart_single" class="donate-btn" data-id="5257" onclick="return false;"><span id="lnk_donate_add_to_cart_single_span">Donate</span>
-
-                <i id="donated_np" class="fa fa-check" style="display: none;"></i>
-
-                <i id="spinning_gear" style="margin-left: 10px; display: none;" class="fa fa-cog fa-spin"></i>
-
+                <i id="donated_np" class="fa fa-check display-none"></i>
+                <i id="spinning_gear"  class="fa fa-cog fa-spin spinning-gear-position display-none"></i>
               </a>
-
               <!-- //Donate Now -->
             </div>
-
           </div>
 
-
           <!-- // Challenge Grants -->
-
           <a class="favorite-this-btn nonprofits_fv_btn np_favorite" data-id="5257"><i class="favorite-this-icon"></i> <span>Add To Favorites</span></a>
-
-
 
           <!-- Challenge Grants -->
           <div class="challenge-grants">
-
-
             <span class="small-title">WHAT WE HAVE RAISED</span>
             <span class="title-note">Including matching grants</span>
-
             <span class="total-raised-amt">$41,475.27</span>
-
-
-            <!--<span class="small-title">Individual Donations</span>
-                    <span class="ind-donations-amt">$26,475.27</span>-->
-
 
             <span class="small-title">Donors</span>
             <span class="donors-amt">482</span>
 
-
             <span class="small-title">Matching Grants</span>
-
-
-            <div style="padding: 5px;padding-left: 0;" class="matching-grants-list">Your donations will be matched by these generous pledges.</div>
+            <div class="matching-grants-list matching-grants-position">Your donations will be matched by these generous pledges.</div>
             <span class="cg-amt">$15,000.00</span>
 
             <div class="matching-grants-list">
               CSFR's Board of Directors , FoodMaven, Jill Tiefenthaler &amp; Kevin Rask, Lisa T. C. Blattner, The Bloom Foundation , The Stiling Family, Tilly Town Farm Fund, Venus &amp; Co
-
-
             </div>
           </div>
 
           <div class="np-details">
-
-
             Phone: <strong>(719) 470-2737</strong><br>
             <a href="http://www.coloradospringsfoodrescue.org/" class="external-link" target="_blank">Visit Website</a><br>
-
-            <!--
-			 			   Year Founded: <strong>2014</strong><br>                                                                                    -->
           </div>
 
           <ul class="social-bugs">
@@ -159,8 +134,7 @@
           </ul>
 
           <div class="np-single-share">
-            <!-- <a href="https://www.facebook.com/csfoodrescue/" class="share-btn">Share</a> -->
-            <share-button class="sharer-0" style="display: initial;">Share this<div class="sb-social load sb-top sb-center networks-4">
+            <share-button class="sharer-0" >Share this<div class="sb-social load sb-top sb-center networks-4">
                 <ul>
                   <li class="pinterest disabled" data-network="pinterest"><a onclick="return false"></a></li>
                   <li class="twitter enabled" data-network="twitter"><a onclick="return false"></a></li>
@@ -174,8 +148,6 @@
               </div>
             </share-button>
           </div>
-
-
         </div>
       </div>
     </div>

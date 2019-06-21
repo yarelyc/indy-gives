@@ -2315,20 +2315,20 @@ share-button:before {
 }
 
 .position-box_1{
-  position: absolute; 
-  left: 0%; 
+  position: absolute;
+  left: 0%;
   top: 0px;
 }
 
 .position-box_2{
   position: absolute;
-  left: 49.5223%; 
+  left: 49.5223%;
   top: 0px;"
 }
 
 .position-box_3{
   position: absolute;
-  left: 0%; 
+  left: 0%;
   top: 488px;
 }
 
@@ -2536,6 +2536,27 @@ nav.subnav a:hover {
 .cat-icon div {
     display: table-cell;
     vertical-align: middle;
+}
+
+/* New CSS-2019  */
+.adding-padding{
+  padding: .5em;
+}
+.transform-style{
+  opacity: 1;
+  width: 566px;
+  transform: translate3d(0px, 0px, 0px);
+}
+.display-none{
+   display:none;
+}
+.spinning-gear-position{
+  margin-left: 10px;
+}
+
+.matching-grants-position{
+  padding: 5px;
+  padding-left: 0;
 }
 
 /* Nonprofit colors */
@@ -3050,6 +3071,13 @@ a.give-special {
     text-decoration: none;
 }
 
+/* New 2019 */
+.image-position{
+  margin-right: 96px;
+}
+.center-paragraph{
+  text-align: center;
+}
 
 /* ==========================================================================
    Rewards Page
@@ -3135,6 +3163,14 @@ a.give-special {
     min-height: 525px;
 }
 
+/* New 2019 */
+.paragraph-bottom-space{
+  margin-bottom: 48px;
+}
+.mas-location{
+  float: left;
+}
+
 
 /* ==========================================================================
    Boost reward box modifications
@@ -3171,6 +3207,16 @@ a.give-special {
 .bkd-purple {
     background: #522e91;
 }
+.bkd-red{
+    background:#ec1164;
+}
+.bkd-blue{
+    background:#005aaa;
+}
+.bkd-dark-blue{
+    background:#154f9b;
+}
+
 
 .give-rewards-content ul {
     list-style: none;
@@ -3244,7 +3290,13 @@ a.give-special {
     }
 }
 
-
+/* New 2019 */
+.hr-position{
+  margin: 3em 0;
+}
+.reward-parthners-paragraph{
+  font-weight: 400;
+}
 
 
 /* ==========================================================================
