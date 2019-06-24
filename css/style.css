@@ -1068,8 +1068,8 @@ textarea {
 
 @font-face {
     font-family: 'gives-font';
-    src: url("fonts/gives-font.eot?-bk87z2");
-    src: url("fonts/gives-font.eot?#iefix-bk87z2") format("embedded-opentype"),url("fonts/gives-font.ttf?-bk87z2") format("truetype"),url("fonts/gives-font.woff?-bk87z2") format("woff"),url("fonts/gives-font.svg?-bk87z2#gives-font") format("svg");
+    src: url("../fonts/gives-font.eot?-bk8");
+    src: url("../fonts/gives-font.eot?#iefix-bk8") format("embedded-opentype"),url("../fonts/gives-font.ttf?-bk8") format("truetype"),url("../fonts/gives-font.woff?-bk8") format("woff"),url("../fonts/gives-font.svg?-bk87z2#gives-font") format("svg");
     font-weight: normal;
     font-style: normal
 }
