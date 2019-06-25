@@ -77,6 +77,15 @@ $(".fav-toggle").on("click", function(e){
 
 });
 
+/* ==========================================================================
+Donation Page Masonry Grid
+ ========================================================================== */
+
+$('#dv_donate_container').masonry({
+    // options
+    itemSelector: '.np-donate-category',
+    columnWidth: 400
+});
 
 
 
