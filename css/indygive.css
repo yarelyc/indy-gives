@@ -162,6 +162,7 @@ a.search-pop {
   left: 35px;
   font-size: 1.375em;
   top: 10px;
+  text-decoration: none;
 }
 
 .search-pop .icon-search {
@@ -675,6 +676,18 @@ img.live-here-text {
 .height a {
   height: 615px;
 }
+.btn-space{
+  margin: 10px 0;
+}
+.sidebar-position{
+  position: relative;
+  padding-top: 10px;
+}
+
+
+
+
+
 
 /* M3 Force thumbnails to be the same size */
 .m3-img {
@@ -2768,7 +2781,7 @@ a.fav-toggle {
 }
 
 .fav-toggle{
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 
 
