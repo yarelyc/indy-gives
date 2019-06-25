@@ -1323,6 +1323,12 @@ share-button:before {
 .col-4 a {
   text-decoration: none;
 }
+.masonary-container .grid-sizer {
+  width: 48%;
+}
+.masonary-container .np-box {
+  /*min-height: 0px;*/
+}
 
 
 

@@ -94,6 +94,36 @@
         <!-- //search button -->
       </nav>
     </div>
+    <div class="sidebar-fav sidebar-position">
+      <div class="sidebar">
+        <div class="favbar">
+          <a class="fav-toggle" href="#">
+            <i class="icon-heart" aria-hidden="true"></i>
+          </a>
+          <div class="upper">
+            <div class="favorite-links-list favorites" id="fav-flyout">
+              <h4 class="sidebar-align">Favorite Nonprofits</h4>
+              <div id="favorite-links-list-flyout" class="favorite-list favorite-div">
+                <div class="favorite_link" data-id="5191">
+                  <a href="#">Non-Profit Name</a>
+                  <span class="delete_from_favorites" data-id="5191"> x </span>
+                  <br><br>
+                </div>
+                <div class="favorite_link" data-id="4974">
+                  <a href="#">Non-Profit Name</a>
+                  <span class="delete_from_favorites" data-id="4974"> x </span>
+                  <br><br>
+                </div>
+              </div>
+              <div class="favorites-loading-list"></div>
+              <div class="sidebar-align sidebar-bottom sidebar-position">
+                Click or tap on any nonprofit to view their profile or to donate.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- End of Menu -->
 
@@ -225,7 +255,7 @@
             </div>
           </div>
 
-          <div class="np-box np-box-position2" >
+          <div class="np-box np-box-position2">
             <a href="https://indygive.com/nonprofit/rawtools/">
               <img width="1024" height="683" src="https://indygive.com/wp-content/uploads/2018/04/RAWtools_Image2_180419-7-1024x683.jpg" class="attachment-large size-large  " alt="" srcset="https://indygive.com/wp-content/uploads/2018/04/RAWtools_Image2_180419-7-1024x683.jpg 1024w, https://indygive.com/wp-content/uploads/2018/04/RAWtools_Image2_180419-7-450x300.jpg 450w, https://indygive.com/wp-content/uploads/2018/04/RAWtools_Image2_180419-7-768x512.jpg 768w, https://indygive.com/wp-content/uploads/2018/04/RAWtools_Image2_180419-7-600x400.jpg 600w, https://indygive.com/wp-content/uploads/2018/04/RAWtools_Image2_180419-7-800x533.jpg 800w"
                 sizes="(max-width: 1024px) 100vw, 1024px" data-wp-pid="6653">
@@ -243,7 +273,7 @@
             </div>
           </div>
 
-          <div class="np-box np-box-position3" >
+          <div class="np-box np-box-position3">
             <a href="https://indygive.com/nonprofit/wild-connections/">
               <img width="1024" height="768" src="https://indygive.com/wp-content/uploads/2018/04/Mixing-Cement-at-the-Farnum-Restoration-MBallard-3-1024x768.jpg" class="attachment-large size-large  " alt="" srcset="https://indygive.com/wp-content/uploads/2018/04/Mixing-Cement-at-the-Farnum-Restoration-MBallard-3-1024x768.jpg 1024w, https://indygive.com/wp-content/uploads/2018/04/Mixing-Cement-at-the-Farnum-Restoration-MBallard-3-200x150.jpg 200w, https://indygive.com/wp-content/uploads/2018/04/Mixing-Cement-at-the-Farnum-Restoration-MBallard-3-400x300.jpg 400w, https://indygive.com/wp-content/uploads/2018/04/Mixing-Cement-at-the-Farnum-Restoration-MBallard-3-768x576.jpg 768w, https://indygive.com/wp-content/uploads/2018/04/Mixing-Cement-at-the-Farnum-Restoration-MBallard-3-600x450.jpg 600w, https://indygive.com/wp-content/uploads/2018/04/Mixing-Cement-at-the-Farnum-Restoration-MBallard-3-800x600.jpg 800w"
                 sizes="(max-width: 1024px) 100vw, 1024px" data-wp-pid="6721">
@@ -361,12 +391,11 @@
 
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="assets/js/vendor/jquery.fancybox.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
+    <script src="js/plugins.js"></script>
 
     <!--Text Carousel-->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/site.js"></script>
   </footer>
   <!--End of Footer -->
 
@@ -397,14 +426,5 @@
       }, 5000);
     });
   </script>
-  <style>
-    .masonary-container .grid-sizer {
-      width: 48%;
-    }
-
-    .masonary-container .np-box {
-      /*min-height: 0px;*/
-    }
-  </style>
 </body>
 </html>
