@@ -2125,6 +2125,63 @@ nav.subnav ul li.youth-in-action.active a, nav.subnav ul li.youth-in-action a:ho
   margin: 0 0 24px 0;
 }
 
+/* New 2019 */
+.dv_donate_item {
+    display: flex;
+}
+.np-donate-lb {
+    margin-left: 5px;
+    display: inline-block;
+    width: 65%;
+    /* text-align: center; */
+}
+.np-donate-lb a {
+    text-decoration: none;
+    color: #373e42;
+    font-weight: 200;
+}
+.donation_amnt_err{
+    color: #fff;
+    position: fixed;
+    top: 0;
+    background: #009fc3;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+    z-index: 999;
+}
+.np-donate-amt {
+    width: 30%;
+    margin: auto;
+}
+
+.favorites-info {
+    padding-bottom: 20px;
+    margin: 0 0 24px 0;
+}
+
+.favorites-title {
+    display: block;
+    margin: 0;
+    padding: 20px 20px 12px 20px;
+}
+
+.pod-category-price a{  
+    text-decoration: underline;
+}
+
+.pod-category-price a:hover{
+    color: #D83B20;
+}
+
+@media only screen and (max-width: 768px){
+    .np-donate-category {
+        width: 100%;
+        float: none;
+    }
+}
+
 /* ==========================================================================
    CHECKOUT
    ========================================================================== */
