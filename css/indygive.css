@@ -1310,6 +1310,9 @@ share-button:before {
   text-decoration: none;
 }
 
+
+
+
 /* Nonprofit Archive */
 .np-box {
   position: relative;
@@ -1354,6 +1357,26 @@ share-button:before {
 .np_favorite {
   cursor: pointer;
 }
+
+/* New 2019 */
+.np-box-position{
+  position: absolute;
+  left: 49.5223%;
+  top: 514px;
+}
+.np-box-position2{
+  position: absolute;
+  left: 0%;
+  top: 1003px;
+}
+.np-box-position3{
+  position: absolute;
+  left: 49.5223%;
+  top: 1008px;
+}
+
+
+
 
 .favorites-title {
   background: none;
