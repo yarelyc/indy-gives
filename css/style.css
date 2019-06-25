@@ -3463,6 +3463,7 @@ textarea {
 
 .row {
     width: 100%;
+    margin: auto;
     *zoom:1}
 
 .row:before,.row:after {
