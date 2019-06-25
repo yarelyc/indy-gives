@@ -2673,7 +2673,7 @@ div.form_saved_message div.form_saved_message_emailform form input[type=text] {
 
 a.fav-toggle {
   position: relative;
-  left: -76px;
+  left: -74px;
   float: left;
   z-index: 20;
   display: inline-block;
@@ -2695,6 +2695,11 @@ a.fav-toggle {
   color: #EC1164;
   line-height: 1;
 }
+
+.fav-toggle{
+  padding-top: 20px;
+}
+
 
 .favorites {
   background-color: inherit;
@@ -2731,8 +2736,14 @@ a.fav-toggle {
   color: #009fc3;
 }
 
+.delete_from_favorites{
+  color: red;
+  cursor: pointer;
+}
+
 div.sidebar-bottom {
   background-color: #dcd7d1;
+  padding-top: 10px
 }
 
 .upper {
