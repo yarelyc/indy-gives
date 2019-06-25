@@ -2167,7 +2167,7 @@ nav.subnav ul li.youth-in-action.active a, nav.subnav ul li.youth-in-action a:ho
     padding: 20px 20px 12px 20px;
 }
 
-.pod-category-price a{  
+.pod-category-price a{
     text-decoration: underline;
 }
 
@@ -2214,6 +2214,17 @@ nav.subnav ul li.youth-in-action.active a, nav.subnav ul li.youth-in-action a:ho
 
 .chosen-container {
   max-width: 100%;
+}
+
+/* New 2019 */
+.info-tooltip {
+    position: relative;
+    top: 22px;
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+.info-tooltip:hover{
+    color: #D83B20;
 }
 
 /* ==========================================================================
