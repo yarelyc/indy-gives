@@ -20,6 +20,94 @@
 </head>
 
 <body>
+
+<!-- Header/Navigation -->
+<header role="banner">
+  <div class="container">
+    <span class="countdown-text">TIME REMAINING<br>TO GIVE</span>
+    <span id="countdown">
+          <div class="cd-segment days">
+            <span>00</span>
+            <span class="countdown-label">days</span>
+          </div>
+          <div class="cd-segment hours">
+            <span>00</span>
+            <span class="countdown-label">hr</span>
+          </div>
+          <div class="cd-segment mins">
+            <span>00</span>
+            <span class="countdown-label">min</span>
+          </div>
+          <div class="cd-segment secs">
+            <span>00</span>
+            <span class="countdown-label">sec</span>
+          </div>
+        </span>
+    <a href="#" class="logo">
+      <img src="assets/images/indygive-logo.png" alt="">
+    </a>
+
+    <a class="navicon" href="#"><i class="icon-bars"></i></a>
+    <nav class="main-nav" role="navigation">
+      <div class="menu-mc_gives-container">
+        <ul id="menu-mc_gives" class="menu">
+          <li id="menu-item-5369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5369"><a href="nonprofits.html">Meet Our Nonprofits</a></li>
+          <li id="menu-item-145" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-145"><a>How does it work?</a>
+            <ul class="sub-menu">
+              <li id="menu-item-6931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6931"><a href="how-to-donate.html">How to donate</a></li>
+              <li id="menu-item-6932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6932"><a href="donate.html">Donate</a></li>
+              <li id="menu-item-2530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2530"><a href="sponsors-partner.html">Sponsors/Partners</a></li>
+              <li id="menu-item-6933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6933"><a href="rewards.html">Rewards</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-805" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-805"><a>Leaderboard</a>
+            <ul class="sub-menu">
+              <li id="menu-item-6934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6934"><a href="donation-amount.html">Total Donations</a></li>
+              <li id="menu-item-6936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6936"><a href="number-of-donors.html">Number of Donors</a></li>
+              <li id="menu-item-6935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6935"><a href="total-young-donors.html">Total Young Donors</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-6937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6937"><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div> <a class="cart-btn" href="/donate"><i class="icon-shopping-cart" aria-hidden="true"></i><span class="visuallyhidden">View cart</span></a>
+      <!-- search button -->
+      <a class="search-pop" href="#search-pop"><i class="icon-search" aria-hidden="true"></i></a>
+      <!-- //search button -->
+    </nav>
+  </div>
+  <div class="sidebar-fav sidebar-position">
+    <div class="sidebar">
+      <div class="favbar">
+        <a class="fav-toggle" href="#">
+          <i class="icon-heart" aria-hidden="true"></i>
+        </a>
+        <div class="upper">
+          <div class="favorite-links-list favorites" id="fav-flyout">
+            <h4 class="sidebar-align">Favorite Nonprofits</h4>
+            <div id="favorite-links-list-flyout" class="favorite-list favorite-div">
+              <div class="favorite_link" data-id="5191">
+                <a href="#">Non-Profit Name</a>
+                <span class="delete_from_favorites" data-id="5191"> x </span>
+                <br><br>
+              </div>
+              <div class="favorite_link" data-id="4974">
+                <a href="#">Non-Profit Name</a>
+                <span class="delete_from_favorites" data-id="4974"> x </span>
+                <br><br>
+              </div>
+            </div>
+            <div class="favorites-loading-list"></div>
+            <div class="sidebar-align sidebar-bottom sidebar-position">
+              Click or tap on any nonprofit to view their profile or to donate.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- //Header/Navigation -->
+
   <section class="page-content page-2538">
     <div class="container">
       <div class="masthead">
@@ -28,32 +116,6 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <script>
-            if (document.location.protocol != "https:") {
-              document.location = document.URL.replace(/^http:/i, "https:");
-            }
-          </script>
-          <script type="text/javascript" src="https://indygive.com/wp-content/plugins/charts-data-structure/js/charts-custom-script.js"></script>
-          <script>
-            if (document.location.protocol != "https:") {
-              document.location = document.URL.replace(/^http:/i, "https:");
-            }
-          </script>
-          <script type="text/javascript" src="https://indygive.com/wp-content/plugins/charts-data-structure/js/highcharts/highcharts.js"></script>
-          <script>
-            if (document.location.protocol != "https:") {
-              document.location = document.URL.replace(/^http:/i, "https:");
-            }
-          </script>
-          <script type="text/javascript">
-            /* <![CDATA[ */
-            var ajax_params = {
-              "ajaxurl": "https:\/\/indygive.com\/wp-admin\/admin-ajax.php",
-              "action": "donate_add_to_cart"
-            };
-            /* ]]> */
-          </script>
-          <script type="text/javascript" src="https://indygive.com/wp-content/plugins/donation-custom-plugin/js/donate-custom-script.js?t=1560903170"></script>
           <div class="at-above-post-page addthis_tool" data-url="https://indygive.com/contact/"></div>
           <p>235 S. Nevada Ave.<br>
             Colorado Springs, CO 80903<br>
@@ -107,6 +169,7 @@
         </div>
       </div>
     </div>
+  </section>
 
     <!--Footer -->
     <footer>
@@ -173,4 +236,7 @@
       <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     </footer>
     <!--End of Footer -->
-  </section>
+
+</body>
+
+</html>
