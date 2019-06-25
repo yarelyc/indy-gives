@@ -88,4 +88,18 @@ $('#dv_donate_container').masonry({
 });
 
 
+/* ==========================================================================
+   Responsive Navigation
+   ========================================================================== */
+
+var $menu = $('.main-nav'),
+    $menulink = $('.navicon');
+
+$menulink.on("click", function(e) {
+    $menulink.toggleClass('active');
+    $menu.toggleClass('active');
+    e.preventDefault();
+});
+
+
 
