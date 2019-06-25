@@ -1330,6 +1330,15 @@ share-button:before {
   /*min-height: 0px;*/
 }
 
+/* Slider CSS */
+.transform-style{
+  opacity: 1;
+  width: 1444px;
+  transform: translate3d(0px, 0px, 0px);
+}
+.slider-width{
+   width: 722px;
+}
 
 
 
