@@ -3266,3 +3266,53 @@ div.sidebar-bottom {
     font-size: 1.1em;
   }
 }
+
+.dv_donate_item {
+  display: flex;
+
+}
+
+.np-donate-lb {
+  margin-left: 5px;
+  display: inline-block;
+  width: 65%;
+
+  /* text-align: center; */
+
+}
+
+.np-donate-lb a {
+  text-decoration: none;
+  color: #373e42;
+}
+
+.donation_amnt_err{
+  color: #fff;
+  position: fixed;
+  top: 0;
+  background: #009fc3;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.np-donate-amt {
+  width: 30%;
+  margin: auto;
+
+}
+
+.np-donate-category{
+  width: 395px;
+}
+
+@media only screen and (max-width: 768px){
+
+  .np-donate-category {
+    width: 100%;
+    float: none;
+  }
+
+}

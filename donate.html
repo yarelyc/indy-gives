@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Indy Gives</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/indygive.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+</head>
+
+
+<body>
+  <section>
+    <div class="container">
+      <div class="masthead">
+        <a class="donate-btn" href="/donate">Donate Now</a>
+        <h1>Donate</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <p>To make a donation, enter in the amount in the box next to the nonprofit of your choice. You can make donations to multiple nonprofits. You can also donate on each individual nonprofit’s page on this website. Once you are finished,
+            click on the Checkout button to complete your donation.</p>
+          <p>If you wish to make a gift In Honor or Memory of someone, you will have the opportunity to do so when you check out. Please note you can only recognize one person per transaction. You will need to check out additional times if you wish
+            to recognize multiple people.</p>
+        </div>
+
+        <p style="display:none" class="donation_amnt_err">Each donation must be $10.00 or more. Please update your donations that are less than $10.00 and continue checkout.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-9" id="dv_donate_container">
+          <div class="np-donate-category">
+            <h3 class="animals-color">Animals</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-5191"><input class="np-donate-amt" type="text" id="np-5191" name="donation[5191]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5191"><a href="/nonprofit/all-breed-rescue-training/"
+                    target="_blank">All Breed Rescue &amp; Training</a></label></li>
+              <li class="dv_donate_item" id="np_li-4974"><input class="np-donate-amt" type="text" id="np-4974" name="donation[4974]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4974"><a href="/nonprofit/happy-cats-haven/"
+                    target="_blank">Happy Cats Haven</a></label></li>
+              <li class="dv_donate_item" id="np_li-5261"><input class="np-donate-amt" type="text" id="np-5261" name="donation[5261]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5261"><a href="/nonprofit/harleys-hope-foundation/"
+                    target="_blank">Harley’s Hope Foundation</a></label></li>
+              <li class="dv_donate_item" id="np_li-5129"><input class="np-donate-amt" type="text" id="np-5129" name="donation[5129]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5129"><a href="/nonprofit/look-what-the-cat-brought-in/"
+                    target="_blank">look what the cat brought in</a></label></li>
+              <li class="dv_donate_item" id="np_li-4948"><input class="np-donate-amt" type="text" id="np-4948" name="donation[4948]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4948"><a href="/nonprofit/paws-n-hooves-rescue/"
+                    target="_blank">Paws N Hooves Rescue</a></label></li>
+              <li class="dv_donate_item" id="np_li-5021"><input class="np-donate-amt" type="text" id="np-5021" name="donation[5021]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5021"><a href="/nonprofit/safe-place-for-pets/"
+                    target="_blank">Safe Place for Pets</a></label></li>
+              <li class="dv_donate_item" id="np_li-5139"><input class="np-donate-amt" type="text" id="np-5139" name="donation[5139]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5139"><a href="/nonprofit/spirit-keeper-equine-sanctuary/"
+                    target="_blank">Spirit Keeper Equine Sanctuary</a></label></li>
+              <li class="dv_donate_item" id="np_li-5153"><input class="np-donate-amt" type="text" id="np-5153" name="donation[5153]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5153"><a href="/nonprofit/teller-county-regional-animal-shelter/"
+                    target="_blank">Teller County Regional Animal Shelter (TCRAS)</a></label></li>
+              <li class="dv_donate_item" id="np_li-6180"><input class="np-donate-amt" type="text" id="np-6180" name="donation[6180]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6180"><a href="/nonprofit/wild-blue-cats/"
+                    target="_blank">Wild Blue Cats!</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">Big Ideas</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-5257">
+                <input class="np-donate-amt" type="text" id="np-5257" name="donation[5257]" placeholder="$" autocomplete="off" value="">
+                <label class="np-donate-lb" for="np-5257">
+                  <a href="/nonprofit/colorado-springs-food-rescue/"
+                    target="_blank">Colorado Springs Food Rescue</a>
+                </label>
+              </li>
+              <li class="dv_donate_item" id="np_li-5181"><input class="np-donate-amt" type="text" id="np-5181" name="donation[5181]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5181"><a href="/nonprofit/manitou-art-center/"
+                    target="_blank">Manitou Art Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-5238"><input class="np-donate-amt" type="text" id="np-5238" name="donation[5238]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5238"><a href="/nonprofit/pikes-peak-justice-and-peace-commission/"
+                    target="_blank">Pikes Peak Justice and Peace Commission</a></label></li>
+              <li class="dv_donate_item" id="np_li-5176"><input class="np-donate-amt" type="text" id="np-5176" name="donation[5176]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5176"><a href="/nonprofit/project-angel-heart/"
+                    target="_blank">Project Angel Heart</a></label></li>
+              <li class="dv_donate_item" id="np_li-6062"><input class="np-donate-amt" type="text" id="np-6062" name="donation[6062]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6062"><a href="/nonprofit/rawtools/"
+                    target="_blank">RAWtools</a></label></li>
+              <li class="dv_donate_item" id="np_li-4988"><input class="np-donate-amt" type="text" id="np-4988" name="donation[4988]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4988"><a href="/nonprofit/wild-connections/"
+                    target="_blank">Wild Connections</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">Build Community</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-6071"><input class="np-donate-amt" type="text" id="np-6071" name="donation[6071]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6071"><a href="/nonprofit/achilles-pikes-peak/"
+                    target="_blank">Achilles Pikes Peak</a></label></li>
+              <li class="dv_donate_item" id="np_li-5114"><input class="np-donate-amt" type="text" id="np-5114" name="donation[5114]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5114"><a href="/nonprofit/citizens-project/"
+                    target="_blank">Citizens Project</a></label></li>
+              <li class="dv_donate_item" id="np_li-5047"><input class="np-donate-amt" type="text" id="np-5047" name="donation[5047]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5047"><a href="/nonprofit/colorado-springs-dance-theatre/"
+                    target="_blank">Colorado Springs Dance Theatre</a></label></li>
+              <li class="dv_donate_item" id="np_li-5134"><input class="np-donate-amt" type="text" id="np-5134" name="donation[5134]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5134"><a href="/nonprofit/colorado-springs-pioneers-museum/"
+                    target="_blank">Colorado Springs Pioneers Museum</a></label></li>
+              <li class="dv_donate_item" id="np_li-5100"><input class="np-donate-amt" type="text" id="np-5100" name="donation[5100]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5100"><a href="/nonprofit/community-cupboard/"
+                    target="_blank">Community Cupboard</a></label></li>
+              <li class="dv_donate_item" id="np_li-6156"><input class="np-donate-amt" type="text" id="np-6156" name="donation[6156]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6156"><a href="/nonprofit/council-of-neighbors-and-organizations/"
+                    target="_blank">Council of Neighbors and Organizations</a></label></li>
+              <li class="dv_donate_item" id="np_li-5066"><input class="np-donate-amt" type="text" id="np-5066" name="donation[5066]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5066"><a href="/nonprofit/pikes-peak-urban-gardens/"
+                    target="_blank">Pikes Peak Urban Gardens</a></label></li>
+              <li class="dv_donate_item" id="np_li-6075"><input class="np-donate-amt" type="text" id="np-6075" name="donation[6075]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6075"><a href="/nonprofit/teller-senior-coalition/"
+                    target="_blank">Teller Senior Coalition</a></label></li>
+              <li class="dv_donate_item" id="np_li-5209"><input class="np-donate-amt" type="text" id="np-5209" name="donation[5209]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5209"><a href="/nonprofit/the-arc-pikes-peak-region/"
+                    target="_blank">The Arc Pikes Peak Region</a></label></li>
+              <li class="dv_donate_item" id="np_li-5087"><input class="np-donate-amt" type="text" id="np-5087" name="donation[5087]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5087"><a href="/nonprofit/the-independence-center/"
+                    target="_blank">The Independence Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-5083"><input class="np-donate-amt" type="text" id="np-5083" name="donation[5083]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5083"><a href="/nonprofit/westside-cares/"
+                    target="_blank">Westside CARES</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">Get Well</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-5149"><input class="np-donate-amt" type="text" id="np-5149" name="donation[5149]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5149"><a href="/nonprofit/colorado-springs-therapeutic-riding-center/"
+                    target="_blank">Colorado Springs Therapeutic Riding Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-5228"><input class="np-donate-amt" type="text" id="np-5228" name="donation[5228]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5228"><a href="/nonprofit/daybreak-an-adult-day-program/"
+                    target="_blank">DayBreak – An Adult Day Program</a></label></li>
+              <li class="dv_donate_item" id="np_li-6068"><input class="np-donate-amt" type="text" id="np-6068" name="donation[6068]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6068"><a href="/nonprofit/finding-our-voices/"
+                    target="_blank">Finding Our Voices</a></label></li>
+              <li class="dv_donate_item" id="np_li-6116"><input class="np-donate-amt" type="text" id="np-6116" name="donation[6116]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6116"><a href="/nonprofit/mayfield-counseling-centers/"
+                    target="_blank">Mayfield Counseling Centers</a></label></li>
+              <li class="dv_donate_item" id="np_li-4970"><input class="np-donate-amt" type="text" id="np-4970" name="donation[4970]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4970"><a href="/nonprofit/mission-medical-center/"
+                    target="_blank">Mission Medical Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-6146"><input class="np-donate-amt" type="text" id="np-6146" name="donation[6146]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6146"><a href="/nonprofit/multiple-sclerosis-alliance-of-southern-colorado/"
+                    target="_blank">Multiple Sclerosis Alliance of Southern Colorado</a></label></li>
+              <li class="dv_donate_item" id="np_li-4907"><input class="np-donate-amt" type="text" id="np-4907" name="donation[4907]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4907"><a href="/nonprofit/national-alliance-on-mental-illness-colorado-springs/"
+                    target="_blank">NAMI Colorado Springs</a></label></li>
+              <li class="dv_donate_item" id="np_li-5124"><input class="np-donate-amt" type="text" id="np-5124" name="donation[5124]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5124"><a href="/nonprofit/pikes-peak-suicide-prevention/"
+                    target="_blank">Pikes Peak Suicide Prevention</a></label></li>
+              <li class="dv_donate_item" id="np_li-6124"><input class="np-donate-amt" type="text" id="np-6124" name="donation[6124]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6124"><a href="/nonprofit/status-code-4-inc/"
+                    target="_blank">Status: Code 4, Inc.</a></label></li>
+              <li class="dv_donate_item" id="np_li-6168"><input class="np-donate-amt" type="text" id="np-6168" name="donation[6168]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6168"><a href="/nonprofit/the-phoenix/"
+                    target="_blank">The Phoenix</a></label></li>
+              <li class="dv_donate_item" id="np_li-5105"><input class="np-donate-amt" type="text" id="np-5105" name="donation[5105]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5105"><a href="/nonprofit/uccs-aging-center/"
+                    target="_blank">UCCS Aging Center</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">Great Outdoors</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-5253"><input class="np-donate-amt" type="text" id="np-5253" name="donation[5253]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5253"><a href="/nonprofit/friends-of-monument-valley-park-inc/"
+                    target="_blank">Friends of Monument Valley Park</a></label></li>
+              <li class="dv_donate_item" id="np_li-5062"><input class="np-donate-amt" type="text" id="np-5062" name="donation[5062]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5062"><a href="/nonprofit/palmer-land-trust/"
+                    target="_blank">Palmer Land Trust</a></label></li>
+              <li class="dv_donate_item" id="np_li-5109"><input class="np-donate-amt" type="text" id="np-5109" name="donation[5109]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5109"><a href="/nonprofit/rocky-mountain-field-institute/"
+                    target="_blank">Rocky Mountain Field Institute</a></label></li>
+              <li class="dv_donate_item" id="np_li-6091"><input class="np-donate-amt" type="text" id="np-6091" name="donation[6091]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6091"><a href="/nonprofit/save-cheyenne/"
+                    target="_blank">Save Cheyenne</a></label></li>
+              <li class="dv_donate_item" id="np_li-5078"><input class="np-donate-amt" type="text" id="np-5078" name="donation[5078]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5078"><a href="/nonprofit/trails-and-open-space-coalition/"
+                    target="_blank">Trails and Open Space Coalition</a></label></li>
+              <li class="dv_donate_item" id="np_li-6742"><input class="np-donate-amt" type="text" id="np-6742" name="donation[6742]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6742"><a href="/nonprofit/upadowna/"
+                    target="_blank">UpaDowna</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">A Hand Up</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-5016"><input class="np-donate-amt" type="text" id="np-5016" name="donation[5016]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5016"><a href="/nonprofit/assistance-league-of-colorado-springs/"
+                    target="_blank">Assistance League® of Colorado Springs</a></label></li>
+              <li class="dv_donate_item" id="np_li-5243"><input class="np-donate-amt" type="text" id="np-5243" name="donation[5243]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5243"><a href="/nonprofit/blackbird-outreach/"
+                    target="_blank">Blackbird Outreach</a></label></li>
+              <li class="dv_donate_item" id="np_li-5144"><input class="np-donate-amt" type="text" id="np-5144" name="donation[5144]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5144"><a href="/nonprofit/community-partnership-family-resource-center/"
+                    target="_blank">Community Partnership Family Resource Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-5233"><input class="np-donate-amt" type="text" id="np-5233" name="donation[5233]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5233"><a href="/nonprofit/court-care-for-the-pikes-peak-region/"
+                    target="_blank">Court Care for the Pikes Peak Region</a></label></li>
+              <li class="dv_donate_item" id="np_li-6130"><input class="np-donate-amt" type="text" id="np-6130" name="donation[6130]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6130"><a href="/nonprofit/discover-goodwill/"
+                    target="_blank">Discover Goodwill</a></label></li>
+              <li class="dv_donate_item" id="np_li-5023"><input class="np-donate-amt" type="text" id="np-5023" name="donation[5023]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5023"><a href="/nonprofit/colorado-springs-ecumenical-social-ministries/"
+                    target="_blank">Ecumenical Social Ministries</a></label></li>
+              <li class="dv_donate_item" id="np_li-4966"><input class="np-donate-amt" type="text" id="np-4966" name="donation[4966]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4966"><a href="/nonprofit/fostering-hope/"
+                    target="_blank">Fostering Hope</a></label></li>
+              <li class="dv_donate_item" id="np_li-6079"><input class="np-donate-amt" type="text" id="np-6079" name="donation[6079]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6079"><a href="/nonprofit/h-e-a-r-s/"
+                    target="_blank">H.E.A.R.S.</a></label></li>
+              <li class="dv_donate_item" id="np_li-6082"><input class="np-donate-amt" type="text" id="np-6082" name="donation[6082]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6082"><a href="/nonprofit/high-plains-helping-hands/"
+                    target="_blank">High Plains Helping Hands</a></label></li>
+              <li class="dv_donate_item" id="np_li-6106"><input class="np-donate-amt" type="text" id="np-6106" name="donation[6106]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6106"><a href="/nonprofit/lutheran-family-services-rocky-mountains/"
+                    target="_blank">Lutheran Family Services Rocky Mountains</a></label></li>
+              <li class="dv_donate_item" id="np_li-6726"><input class="np-donate-amt" type="text" id="np-6726" name="donation[6726]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6726"><a href="/nonprofit/one-nation-walking-together/"
+                    target="_blank">One Nation Walking Together</a></label></li>
+              <li class="dv_donate_item" id="np_li-5158"><input class="np-donate-amt" type="text" id="np-5158" name="donation[5158]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5158"><a href="/nonprofit/southern-colorado-aids-project/"
+                    target="_blank">Southern Colorado AIDS Project</a></label></li>
+              <li class="dv_donate_item" id="np_li-5095"><input class="np-donate-amt" type="text" id="np-5095" name="donation[5095]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5095"><a href="/nonprofit/sue-dinapoli-ovarian-cancer-society/"
+                    target="_blank">Sue DiNapoli Ovarian Cancer Society</a></label></li>
+              <li class="dv_donate_item" id="np_li-6136"><input class="np-donate-amt" type="text" id="np-6136" name="donation[6136]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6136"><a href="/nonprofit/the-justice-center/"
+                    target="_blank">The Justice Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-5200"><input class="np-donate-amt" type="text" id="np-5200" name="donation[5200]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5200"><a href="/nonprofit/tri-lakes-cares/"
+                    target="_blank">Tri-Lakes Cares</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category" >
+            <h3 class="animals-color">Home Safe</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-5070"><input class="np-donate-amt" type="text" id="np-5070" name="donation[5070]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5070"><a href="/nonprofit/dale-house-project/"
+                    target="_blank">Dale House Project</a></label></li>
+              <li class="dv_donate_item" id="np_li-5223"><input class="np-donate-amt" type="text" id="np-5223" name="donation[5223]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5223"><a href="/nonprofit/energy-resource-center/"
+                    target="_blank">Energy Resource Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-6088"><input class="np-donate-amt" type="text" id="np-6088" name="donation[6088]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6088"><a href="/nonprofit/family-promise-of-colorado-springs/"
+                    target="_blank">Family Promise of Colorado Springs</a></label></li>
+              <li class="dv_donate_item" id="np_li-5166"><input class="np-donate-amt" type="text" id="np-5166" name="donation[5166]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5166"><a href="/nonprofit/greccio-housing-unlimited-inc/"
+                    target="_blank">Greccio Housing</a></label></li>
+              <li class="dv_donate_item" id="np_li-4920"><input class="np-donate-amt" type="text" id="np-4920" name="donation[4920]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4920"><a href="/nonprofit/habitat-for-humanity-of-teller-county/"
+                    target="_blank">Habitat for Humanity of Teller County</a></label></li>
+              <li class="dv_donate_item" id="np_li-5214"><input class="np-donate-amt" type="text" id="np-5214" name="donation[5214]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5214"><a href="/nonprofit/homeward-pikes-peak/"
+                    target="_blank">Homeward Pikes Peak</a></label></li>
+              <li class="dv_donate_item" id="np_li-5091"><input class="np-donate-amt" type="text" id="np-5091" name="donation[5091]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5091"><a href="/nonprofit/safe-passage/"
+                    target="_blank">Safe Passage</a></label></li>
+              <li class="dv_donate_item" id="np_li-5265"><input class="np-donate-amt" type="text" id="np-5265" name="donation[5265]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5265"><a href="/nonprofit/springs-rescue-mission/"
+                    target="_blank">Springs Rescue Mission</a></label></li>
+              <li class="dv_donate_item" id="np_li-5057"><input class="np-donate-amt" type="text" id="np-5057" name="donation[5057]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5057"><a href="/nonprofit/tessa/"
+                    target="_blank">TESSA</a></label></li>
+              <li class="dv_donate_item" id="np_li-4978"><input class="np-donate-amt" type="text" id="np-4978" name="donation[4978]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4978"><a href="/nonprofit/urban-peak-colorado-springs/"
+                    target="_blank">Urban Peak Colorado Springs</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">Inspired Learning</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-5186"><input class="np-donate-amt" type="text" id="np-5186" name="donation[5186]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5186"><a href="/nonprofit/catamount-institute/"
+                    target="_blank">Catamount Institute</a></label></li>
+              <li class="dv_donate_item" id="np_li-5162"><input class="np-donate-amt" type="text" id="np-5162" name="donation[5162]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5162"><a href="/nonprofit/diakonia/"
+                    target="_blank">Diakonia</a></label></li>
+              <li class="dv_donate_item" id="np_li-5043"><input class="np-donate-amt" type="text" id="np-5043" name="donation[5043]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5043"><a href="/nonprofit/early-connections-learning-centers/"
+                    target="_blank">Early Connections Learning Centers</a></label></li>
+              <li class="dv_donate_item" id="np_li-6110"><input class="np-donate-amt" type="text" id="np-6110" name="donation[6110]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6110"><a href="/nonprofit/palmer-lake-historical-society/"
+                    target="_blank">Palmer Lake Historical Society</a></label></li>
+              <li class="dv_donate_item" id="np_li-6730"><input class="np-donate-amt" type="text" id="np-6730" name="donation[6730]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6730"><a href="/nonprofit/peak-education/"
+                    target="_blank">Peak Education</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">See Art, Make Art</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-6194"><input class="np-donate-amt" type="text" id="np-6194" name="donation[6194]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6194"><a href="/nonprofit/academy-of-community-theatre-act-ii/"
+                    target="_blank">Academy of Community Theatre (ACT II)</a></label></li>
+              <li class="dv_donate_item" id="np_li-4929"><input class="np-donate-amt" type="text" id="np-4929" name="donation[4929]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4929"><a href="/nonprofit/colorado-springs-chorale/"
+                    target="_blank">Colorado Springs Chorale</a></label></li>
+              <li class="dv_donate_item" id="np_li-4952"><input class="np-donate-amt" type="text" id="np-4952" name="donation[4952]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4952"><a href="/nonprofit/hear-here-poetry/"
+                    target="_blank">Hear, Here! Poetry</a></label></li>
+              <li class="dv_donate_item" id="np_li-5119"><input class="np-donate-amt" type="text" id="np-5119" name="donation[5119]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5119"><a href="/nonprofit/millibo-art-theatre/"
+                    target="_blank">Millibo Art Theatre</a></label></li>
+              <li class="dv_donate_item" id="np_li-5196"><input class="np-donate-amt" type="text" id="np-5196" name="donation[5196]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5196"><a href="/nonprofit/friends-of-the-new-horizons-band/"
+                    target="_blank">New Horizons Band of Colorado Springs</a></label></li>
+              <li class="dv_donate_item" id="np_li-4983"><input class="np-donate-amt" type="text" id="np-4983" name="donation[4983]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4983"><a href="/nonprofit/ormao-dance-company/"
+                    target="_blank">Ormao Dance Company</a></label></li>
+              <li class="dv_donate_item" id="np_li-6734"><input class="np-donate-amt" type="text" id="np-6734" name="donation[6734]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6734"><a href="/nonprofit/meadowgrass-music-festival-rocky-mountain-highway/"
+                    target="_blank">Rocky Mountain Highway Music Collaborative – presenters of MeadowGrass Music Festival</a></label></li>
+              <li class="dv_donate_item" id="np_li-5002"><input class="np-donate-amt" type="text" id="np-5002" name="donation[5002]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5002"><a href="/nonprofit/springs-ensemble-theatre/"
+                    target="_blank">Springs Ensemble Theatre</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">Veterans and Their Families</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-6140"><input class="np-donate-amt" type="text" id="np-6140" name="donation[6140]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6140"><a href="/nonprofit/angels-of-americas-fallen/"
+                    target="_blank">Angels of America’s Fallen</a></label></li>
+              <li class="dv_donate_item" id="np_li-6722"><input class="np-donate-amt" type="text" id="np-6722" name="donation[6722]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6722"><a href="/nonprofit/mt-carmel-veterans-service-center/"
+                    target="_blank">Mt. Carmel Veterans Service Center</a></label></li>
+              <li class="dv_donate_item" id="np_li-6150"><input class="np-donate-amt" type="text" id="np-6150" name="donation[6150]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6150"><a href="/nonprofit/peak-military-care-network/"
+                    target="_blank">Peak Military Care Network</a></label></li>
+              <li class="dv_donate_item" id="np_li-5073"><input class="np-donate-amt" type="text" id="np-5073" name="donation[5073]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5073"><a href="/nonprofit/project-healing-waters-fly-fishing/"
+                    target="_blank">Project Healing Waters Fly Fishing</a></label></li>
+              <li class="dv_donate_item" id="np_li-5033"><input class="np-donate-amt" type="text" id="np-5033" name="donation[5033]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5033"><a href="/nonprofit/victory-service-dogs-inc/"
+                    target="_blank">Victory Service Dogs</a></label></li>
+            </ul>
+          </div>
+          <div class="np-donate-category">
+            <h3 class="animals-color">Youth In Action</h3>
+            <ul class="donate-np-list">
+              <li class="dv_donate_item" id="np_li-6738"><input class="np-donate-amt" type="text" id="np-6738" name="donation[6738]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6738"><a href="/nonprofit/big-brothers-big-sisters-pikes-peak/"
+                    target="_blank">Big Brothers Big Sisters of Colorado – Pikes Peak</a></label></li>
+              <li class="dv_donate_item" id="np_li-6103"><input class="np-donate-amt" type="text" id="np-6103" name="donation[6103]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6103"><a href="/nonprofit/camp-shady-brook-ymca/"
+                    target="_blank">Camp Shady Brook – YMCA</a></label></li>
+              <li class="dv_donate_item" id="np_li-5205"><input class="np-donate-amt" type="text" id="np-5205" name="donation[5205]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5205"><a href="/nonprofit/casa-of-the-pikes-peak-region/"
+                    target="_blank">CASA of the Pikes Peak Region</a></label></li>
+              <li class="dv_donate_item" id="np_li-4915"><input class="np-donate-amt" type="text" id="np-4915" name="donation[4915]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4915"><a href="/nonprofit/colorado-springs-childrens-chorale/"
+                    target="_blank">Colorado Springs Children’s Chorale</a></label></li>
+              <li class="dv_donate_item" id="np_li-4938"><input class="np-donate-amt" type="text" id="np-4938" name="donation[4938]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-4938"><a href="/nonprofit/colorado-springs-youth-symphony-association/"
+                    target="_blank">Colorado Springs Youth Symphony</a></label></li>
+              <li class="dv_donate_item" id="np_li-5494"><input class="np-donate-amt" type="text" id="np-5494" name="donation[5494]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5494"><a href="/nonprofit/indy-give/"
+                    target="_blank">Indy Give</a></label></li>
+              <li class="dv_donate_item" id="np_li-5248"><input class="np-donate-amt" type="text" id="np-5248" name="donation[5248]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5248"><a href="/nonprofit/insideout-youth-services/"
+                    target="_blank">Inside Out Youth Services</a></label></li>
+              <li class="dv_donate_item" id="np_li-5028"><input class="np-donate-amt" type="text" id="np-5028" name="donation[5028]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-5028"><a href="/nonprofit/kids-on-bikes/"
+                    target="_blank">Kids on Bikes</a></label></li>
+              <li class="dv_donate_item" id="np_li-6162"><input class="np-donate-amt" type="text" id="np-6162" name="donation[6162]" placeholder="$" autocomplete="off" value=""><label class="np-donate-lb" for="np-6162"><a href="/nonprofit/youth-documentary-academy/"
+                    target="_blank">Youth Documentary Academy</a></label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3 left-sidebar">
+          <div id="dv_donate_checkout_container">
+            <form method="post" action="/checkout" id="checkoutForm" novalidate="novalidate">
+              <input type="hidden" name="action" value="checkout_donation_form">
+              <div class="donation-cart-side">
+                <h4>Your Donation Cart</h4>
+                <div id="np_items_added">
+                  <p class="cart-note">You have 0 items added</p>
+                </div>
+                <div class="total">
+                  TOTAL: <strong id="spn_donate_sum">$0.00</strong>
+                </div>
+              </div>
+              <input type="hidden" name="hdn-donate-amount" id="hdn_donate_amount" data-val="10" value="0.00"><input type="hidden" name="hdn-donate-data" id="hdn_donate_data" data-val="10" value="{}"><input type="hidden" name="hdn-items-list" id="hdn_items_list"
+                value="">
+              <input type="submit" id="checkoutButton" class="cart_checkout checkout-btn checkout-donation-class" name="donate_submit" value="Checkout" style="width: 100%">
+            </form>
+            <p>100% of your donation goes to your designated nonprofit(s).</p>
+            <br>
+            <h5 class="favorites-title">Favorites</h5>
+            <p class="favorites-info">You have <span class="favorite_amount">2</span> favorites</p>
+            <div id="favorite-links-list">
+              <div class="favorite_link" data-id="5191"><a href="/nonprofit/all-breed-rescue-training/">All Breed Rescue &amp; Training</a><span class="delete_from_favorites" data-id="5191" style="color: red; cursor: pointer;">
+                  x</span><br><br></div>
+              <div class="favorite_link" data-id="5253"><a href="/nonprofit/friends-of-monument-valley-park-inc/">Friends of Monument Valley Park</a><span class="delete_from_favorites" data-id="5253" style="color: red; cursor: pointer;">
+                  x</span><br><br></div>
+            </div>
+          </div>
+          <div class="pod-category-price">
+            <h2>Rewards</h2>
+            <ul>
+              <li id="rewards-49">Level 1<div class="donation_range" data-mindonation="25.00" data-maxdonation="99.99">$25.00 - $99.99</div>
+              </li>
+              <li id="rewards-50">Level 2<div class="donation_range" data-mindonation="100.00" data-maxdonation="249.99">$100.00 - $249.99</div>
+              </li>
+              <li id="rewards-51">Level 3<div class="donation_range" data-mindonation="250.00" data-maxdonation="499.99">$250.00 - $499.99</div>
+              </li>
+              <li id="rewards-52">Level 4<div class="donation_range" data-mindonation="500.00" data-maxdonation="999.99">$500.00 - $999.99</div>
+              </li>
+              <li id="rewards-53">Level 5<div class="donation_range" data-mindonation="1000.00" data-maxdonation="2499.99">$1000.00 - $2499.99</div>
+              </li>
+              <li id="rewards-54">Level 6<div class="donation_range" data-mindonation="2500.00" data-maxdonation="4999.99">$2500.00 - $4999.99</div>
+              </li>
+              <li id="rewards-55">Level 7<div class="donation_range" data-mindonation="5000.00" data-maxdonation="100000.00">$5000.00+</div>
+              </li>
+              <li id="rewards-56">Under 17<div class="donation_range" data-mindonation="10.00" data-maxdonation="24.00">$10.00 - $24.00</div>
+              </li>
+              <li id="rewards-60">Under 17 Level 2<div class="donation_range" data-mindonation="25.00" data-maxdonation="100000.00">$25.00+</div>
+              </li>
+            </ul>
+            <a href="/rewards/" target="_blank">View Rewards</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img class="indy-logo" src="assets/images/indygive-logo.png" alt="MC Weekly">
+          </div>
+
+          <div class="col-4">
+            <ul class="site-map">
+              <li><a href="/">Nonprofits</a></li>
+              <li><a href="/">Contact</a></li>
+              <li><a href="/">FAQS</a></li>
+              <li><a href="/">Donate</a></li>
+              <li class="full-width"><a href="/">2018 Give! Campaign Application</a></li>
+            </ul>
+          </div>
+
+          <div class="col-4">
+            <span class="footer-contact">719.577.4545 |
+              <a href="mailto:give@csindy.com">GIVE@CSINDY.COM</a>
+            </span>
+          </div>
+
+          <div class="col-2">
+            <div class="footer-sm">
+              <a href="https://www.facebook.com/IndyGive/" target="_blank" rel="noopener">
+                <img src="assets/images/icons/icon-facebook.png" alt="Facebook" width="45" height="45">
+              </a>
+              <a href="https://twitter.com/indygive" target="_blank" rel="noopener">
+                <img src="assets/images/icons/icon-twitter.png" alt="Twitter" width="45" height="45">
+              </a>
+              <a href="https://www.youtube.com/user/indygive" target="_blank" rel="noopener">
+                <img src="assets/images/icons/icon-youtube.png" alt="YouTube" width="45" height="45">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>© 2018 Indy Give</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper" class="remodal-bg remodal-is-closed"></div>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--Text Carousel-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/site.js"></script>
+
+    <!-- Donate Masonry Grid -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </footer>
+  <!--End of Footer -->
+</body>
+
