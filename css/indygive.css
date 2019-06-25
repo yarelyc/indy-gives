@@ -162,6 +162,7 @@ a.search-pop {
   left: 35px;
   font-size: 1.375em;
   top: 10px;
+  text-decoration: none;
 }
 
 .search-pop .icon-search {
@@ -675,6 +676,18 @@ img.live-here-text {
 .height a {
   height: 615px;
 }
+.btn-space{
+  margin: 10px 0;
+}
+.sidebar-position{
+  position: relative;
+  padding-top: 10px;
+}
+
+
+
+
+
 
 /* M3 Force thumbnails to be the same size */
 .m3-img {
@@ -1309,6 +1322,12 @@ share-button:before {
 /* New 2019 */
 .col-4 a {
   text-decoration: none;
+}
+.masonary-container .grid-sizer {
+  width: 48%;
+}
+.masonary-container .np-box {
+  /*min-height: 0px;*/
 }
 
 
@@ -2167,7 +2186,7 @@ nav.subnav ul li.youth-in-action.active a, nav.subnav ul li.youth-in-action a:ho
     padding: 20px 20px 12px 20px;
 }
 
-.pod-category-price a{  
+.pod-category-price a{
     text-decoration: underline;
 }
 
@@ -2214,6 +2233,17 @@ nav.subnav ul li.youth-in-action.active a, nav.subnav ul li.youth-in-action a:ho
 
 .chosen-container {
   max-width: 100%;
+}
+
+/* New 2019 */
+.info-tooltip {
+    position: relative;
+    top: 22px;
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+.info-tooltip:hover{
+    color: #D83B20;
 }
 
 /* ==========================================================================
@@ -2757,7 +2787,7 @@ a.fav-toggle {
 }
 
 .fav-toggle{
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 
 

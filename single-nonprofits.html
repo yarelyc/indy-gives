@@ -8,144 +8,232 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <!-- Fancybox -->
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-  <!-- Font Awesome Pro 5.2.0 -->
-  <link rel="stylesheet" href="css/all.min.css">
-
-  <!-- Animation stylesheet -->
-  <link rel="stylesheet" href="css/animate.css?v=1.01.01">
-
-  <!-- AOS stylesheet -->
-  <link rel="stylesheet" href="css/aos.css">
-
-  <!--Text Carousel-->
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/remodal.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=1.01.02">
   <link rel="stylesheet" href="css/indygive.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
 </head>
-
-<section>
+<!-- Header/Navigation -->
+<header role="banner">
   <div class="container">
-    <div class="masthead">
-      <h1>Colorado Springs Food&nbsp;Rescue</h1>
-      <a class="donate-btn" href="https://indygive.com/donate">Donate Now</a>
-    </div>
-
-    <div class="row">
-      <div class="col-8 adding-padding">
-        <div class="nonprofit-slider slick-initialized slick-slider">
-          <div class="slick-list draggable">
-            <div class="slick-track transform-style">
-              <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 566px;">
-                <img class="slider-image" src="assets/images/background/CSFR-replacement-photo.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="at-above-post addthis_tool" data-url="https://indygive.com/nonprofit/colorado-springs-food-rescue/"></div>
-        <h3>What</h3>
-        <p>We’re cultivating a healthier community through grassroots programs in fresh food access, education and production. Volunteers bring donated fresh, nutritious foods (30,000 pounds monthly) to resident-led, no-cost grocery, cooking and
-          nutrition programs. Moreover, our FLY (Food systems Leadership for Youth) internship/employment program is fostering future leaders in service, community health and food innovation.</p>
-        <h3>Why</h3>
-        <p>Hunger and poor health are symptoms of deeper causes that include poverty, discrimination and deficient neighborhood-based resources. In addition to increasing access to healthy foods, we advocate around and address the root causes of
-          food insecurity. Moreover, with 60-plus partnerships in our city, we’ve redistributed over $3 million of dollars’ worth of healthy food since starting!</p>
-        <h3>Needs</h3>
-        <p>Voluntarios que hablan español y volunteers for food rescues or with cooking-education skills; local gardeners/urban farmers;&nbsp; hunters/game processors; electric tricycles; and bicycle trailers.</p>
-        <h3>Did You Know</h3>
-        <p>CSFR was donated a 3.5 acre piece of land on which we’ll be building a community-operated space where neighbors can grow, cook, learn about, and access fresh food!</p>
-        <blockquote>
-          <p class="font-italic">“In CSFR’s absence, such consistent access to high-quality, healthful foods would not exist and nutrient-poor diets amongst the local population would become poorer, leading to a reduction in health and
-            quality of life.”<br>
-            — Employee at partner site Meadows Park Community Center</p>
-        </blockquote>
-
-        <div class="at-below-post addthis_tool" data-url="https://indygive.com/nonprofit/colorado-springs-food-rescue/"></div><!-- AddThis Share Buttons generic via filter on the_content -->
-
-
+    <span class="countdown-text">TIME REMAINING<br>TO GIVE</span>
+    <span id="countdown">
+      <div class="cd-segment days">
+        <span>00</span>
+        <span class="countdown-label">days</span>
       </div>
-      <div class="col-4 sidebar-np-single">
-        <div class="np-single-stats">
-          <!-- Donate Now -->
-          <div id="response_wrapper">
-            <span class="display-none">
-              Donation added to Cart. <a href="https://indygive.com/donate">View Cart</a>
-            </span>
-          </div>
-          <div class="row">
-            <div class="col-7">
-              <input type="text" name="single_donation_amount" id="single_donation_amount_add_to_cart_value" class="single_donation_amount_add_to_cart_value" placeholder="$ ENTER DONATION HERE" value="">
-            </div>
-            <div class="col-5">
-              <a href="#" id="lnk_donate_add_to_cart_single" class="donate-btn" data-id="5257" onclick="return false;"><span id="lnk_donate_add_to_cart_single_span">Donate</span>
-                <i id="donated_np" class="fa fa-check display-none"></i>
-                <i id="spinning_gear" class="fa fa-cog fa-spin spinning-gear-position display-none"></i>
-              </a>
-              <!-- //Donate Now -->
-            </div>
-          </div>
+      <div class="cd-segment hours">
+        <span>00</span>
+        <span class="countdown-label">hr</span>
+      </div>
+      <div class="cd-segment mins">
+        <span>00</span>
+        <span class="countdown-label">min</span>
+      </div>
+      <div class="cd-segment secs">
+        <span>00</span>
+        <span class="countdown-label">sec</span>
+      </div>
+    </span>
+    <a href="#" class="logo">
+      <img src="assets/images/indygive-logo.png" alt="">
+    </a>
 
-          <!-- // Challenge Grants -->
-          <a class="favorite-this-btn nonprofits_fv_btn np_favorite" data-id="5257"><i class="favorite-this-icon"></i> <span>Add To Favorites</span></a>
-
-          <!-- Challenge Grants -->
-          <div class="challenge-grants">
-            <span class="small-title">WHAT WE HAVE RAISED</span>
-            <span class="title-note">Including matching grants</span>
-            <span class="total-raised-amt">$41,475.27</span>
-
-            <span class="small-title">Donors</span>
-            <span class="donors-amt">482</span>
-
-            <span class="small-title">Matching Grants</span>
-            <div class="matching-grants-list matching-grants-position">Your donations will be matched by these generous pledges.</div>
-            <span class="cg-amt">$15,000.00</span>
-
-            <div class="matching-grants-list">
-              CSFR's Board of Directors , FoodMaven, Jill Tiefenthaler &amp; Kevin Rask, Lisa T. C. Blattner, The Bloom Foundation , The Stiling Family, Tilly Town Farm Fund, Venus &amp; Co
-            </div>
-          </div>
-
-          <div class="np-details">
-            Phone: <strong>(719) 470-2737</strong><br>
-            <a href="http://www.coloradospringsfoodrescue.org/" class="external-link" target="_blank">Visit Website</a><br>
-          </div>
-
-          <ul class="social-bugs">
-            <li><a href="" class="facebook" target="_blank"><i class="icon-facebook"></i><span class="visuallyhidden" aria-hidden="true">Facebook</span></a></li>
-            <li><a href="" class="twitter" target="_blank"><i class="icon-twitter"></i><span class="visuallyhidden" aria-hidden="true">Twitter</span></a></li>
-            <li><a href="" class="youtube" target="_blank"><i class="icon-youtube"></i><span class="visuallyhidden" aria-hidden="true">Youtube</span></a></li>
-            <li><a href="" class="instagram" target="_blank"><i class="icon-instagram"></i><span class="visuallyhidden" aria-hidden="true">Instagram</span></a></li>
-          </ul>
-
-          <div class="np-single-share">
-            <share-button class="sharer-0">Share this<div class="sb-social load sb-top sb-center networks-4">
-                <ul>
-                  <li class="pinterest disabled" data-network="pinterest"><a onclick="return false"></a></li>
-                  <li class="twitter enabled" data-network="twitter"><a onclick="return false"></a></li>
-                  <li class="facebook enabled" data-network="facebook"><a onclick="return false"></a></li>
-                  <li class="whatsapp disabled" data-network="whatsapp"><a onclick="return false"></a></li>
-                  <li class="googlePlus enabled" data-network="googlePlus"><a onclick="return false"></a></li>
-                  <li class="reddit disabled" data-network="reddit"><a onclick="return false"></a></li>
-                  <li class="linkedin enabled" data-network="linkedin"><a onclick="return false"></a></li>
-                  <li class="email disabled" data-network="email"><a onclick="return false"></a></li>
-                </ul>
+    <a class="navicon" href="#"><i class="icon-bars"></i></a>
+    <nav class="main-nav" role="navigation">
+      <div class="menu-mc_gives-container">
+        <ul id="menu-mc_gives" class="menu">
+          <li id="menu-item-5369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5369"><a href="nonprofits.html">Meet Our Nonprofits</a></li>
+          <li id="menu-item-145" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-145"><a>How does it work?</a>
+            <ul class="sub-menu">
+              <li id="menu-item-6931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6931"><a href="how-to-donate.html">How to donate</a></li>
+              <li id="menu-item-6932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6932"><a href="donate.html">Donate</a></li>
+              <li id="menu-item-2530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2530"><a href="sponsors-partner.html">Sponsors/Partners</a></li>
+              <li id="menu-item-6933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6933"><a href="rewards.html">Rewards</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-805" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-805"><a>Leaderboard</a>
+            <ul class="sub-menu">
+              <li id="menu-item-6934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6934"><a href="donation-amount.html">Total Donations</a></li>
+              <li id="menu-item-6936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6936"><a href="number-of-donors.html">Number of Donors</a></li>
+              <li id="menu-item-6935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6935"><a href="total-young-donors.html">Total Young Donors</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-6937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6937"><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div> <a class="cart-btn" href="/donate"><i class="icon-shopping-cart" aria-hidden="true"></i><span class="visuallyhidden">View cart</span></a>
+      <!-- search button -->
+      <a class="search-pop" href="#search-pop"><i class="icon-search" aria-hidden="true"></i></a>
+      <!-- //search button -->
+    </nav>
+  </div>
+  <div class="sidebar-fav sidebar-position">
+    <div class="sidebar">
+      <div class="favbar">
+        <a class="fav-toggle" href="#">
+          <i class="icon-heart" aria-hidden="true"></i>
+        </a>
+        <div class="upper">
+          <div class="favorite-links-list favorites" id="fav-flyout">
+            <h4 class="sidebar-align">Favorite Nonprofits</h4>
+            <div id="favorite-links-list-flyout" class="favorite-list favorite-div">
+              <div class="favorite_link" data-id="5191">
+                <a href="#">Non-Profit Name</a>
+                <span class="delete_from_favorites" data-id="5191"> x </span>
+                <br><br>
               </div>
-            </share-button>
+              <div class="favorite_link" data-id="4974">
+                <a href="#">Non-Profit Name</a>
+                <span class="delete_from_favorites" data-id="4974"> x </span>
+                <br><br>
+              </div>
+            </div>
+            <div class="favorites-loading-list"></div>
+            <div class="sidebar-align sidebar-bottom sidebar-position">
+              Click or tap on any nonprofit to view their profile or to donate.
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</header>
+<!-- //Header/Navigation -->
+
+<body>
+  <section>
+    <div class="container">
+      <div class="masthead">
+        <h1>Colorado Springs Food&nbsp;Rescue</h1>
+        <a class="donate-btn" href="https://indygive.com/donate">Donate Now</a>
+      </div>
+
+      <div class="row">
+        <div class="col-8 adding-padding">
+          <div class="nonprofit-slider slick-initialized slick-slider">
+            <div class="slick-list draggable">
+              <div class="slick-track transform-style">
+                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" >
+                  <img class="slider-image" src="assets/images/background/CSFR-replacement-photo.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="at-above-post addthis_tool" data-url="https://indygive.com/nonprofit/colorado-springs-food-rescue/"></div>
+          <h3>What</h3>
+          <p>We’re cultivating a healthier community through grassroots programs in fresh food access, education and production. Volunteers bring donated fresh, nutritious foods (30,000 pounds monthly) to resident-led, no-cost grocery, cooking and
+            nutrition programs. Moreover, our FLY (Food systems Leadership for Youth) internship/employment program is fostering future leaders in service, community health and food innovation.</p>
+          <h3>Why</h3>
+          <p>Hunger and poor health are symptoms of deeper causes that include poverty, discrimination and deficient neighborhood-based resources. In addition to increasing access to healthy foods, we advocate around and address the root causes of
+            food insecurity. Moreover, with 60-plus partnerships in our city, we’ve redistributed over $3 million of dollars’ worth of healthy food since starting!</p>
+          <h3>Needs</h3>
+          <p>Voluntarios que hablan español y volunteers for food rescues or with cooking-education skills; local gardeners/urban farmers;&nbsp; hunters/game processors; electric tricycles; and bicycle trailers.</p>
+          <h3>Did You Know</h3>
+          <p>CSFR was donated a 3.5 acre piece of land on which we’ll be building a community-operated space where neighbors can grow, cook, learn about, and access fresh food!</p>
+          <blockquote>
+            <p class="font-italic">“In CSFR’s absence, such consistent access to high-quality, healthful foods would not exist and nutrient-poor diets amongst the local population would become poorer, leading to a reduction in health and
+              quality of life.”<br>
+              — Employee at partner site Meadows Park Community Center</p>
+          </blockquote>
+
+          <div class="at-below-post addthis_tool" data-url="https://indygive.com/nonprofit/colorado-springs-food-rescue/"></div><!-- AddThis Share Buttons generic via filter on the_content -->
+
+
+        </div>
+        <div class="col-4 sidebar-np-single">
+          <div class="np-single-stats">
+            <!-- Donate Now -->
+            <div id="response_wrapper">
+              <span class="display-none">
+                Donation added to Cart. <a href="https://indygive.com/donate">View Cart</a>
+              </span>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <input type="text" name="single_donation_amount" id="single_donation_amount_add_to_cart_value" class="single_donation_amount_add_to_cart_value" placeholder="$ ENTER DONATION HERE" value="">
+              </div>
+              <div class="col-5">
+                <a href="#" id="lnk_donate_add_to_cart_single" class="donate-btn" data-id="5257" onclick="return false;"><span id="lnk_donate_add_to_cart_single_span">Donate</span>
+                  <i id="donated_np" class="fa fa-check display-none"></i>
+                  <i id="spinning_gear" class="fa fa-cog fa-spin spinning-gear-position display-none"></i>
+                </a>
+                <!-- //Donate Now -->
+              </div>
+            </div>
+
+            <!-- // Challenge Grants -->
+            <a class="favorite-this-btn nonprofits_fv_btn np_favorite" data-id="5257"><i class="favorite-this-icon"></i> <span>Add To Favorites</span></a>
+
+            <!-- Challenge Grants -->
+            <div class="challenge-grants">
+              <span class="small-title">WHAT WE HAVE RAISED</span>
+              <span class="title-note">Including matching grants</span>
+              <span class="total-raised-amt">$41,475.27</span>
+
+              <span class="small-title">Donors</span>
+              <span class="donors-amt">482</span>
+
+              <span class="small-title">Matching Grants</span>
+              <div class="matching-grants-list matching-grants-position">Your donations will be matched by these generous pledges.</div>
+              <span class="cg-amt">$15,000.00</span>
+
+              <div class="matching-grants-list">
+                CSFR's Board of Directors , FoodMaven, Jill Tiefenthaler &amp; Kevin Rask, Lisa T. C. Blattner, The Bloom Foundation , The Stiling Family, Tilly Town Farm Fund, Venus &amp; Co
+              </div>
+            </div>
+
+            <div class="np-details">
+              Phone: <strong>(719) 470-2737</strong><br>
+              <a href="http://www.coloradospringsfoodrescue.org/" class="external-link" target="_blank">Visit Website</a><br>
+            </div>
+
+            <ul class="social-bugs">
+              <li><a href="" class="facebook" target="_blank"><i class="icon-facebook"></i><span class="visuallyhidden" aria-hidden="true">Facebook</span></a></li>
+              <li><a href="" class="twitter" target="_blank"><i class="icon-twitter"></i><span class="visuallyhidden" aria-hidden="true">Twitter</span></a></li>
+              <li><a href="" class="youtube" target="_blank"><i class="icon-youtube"></i><span class="visuallyhidden" aria-hidden="true">Youtube</span></a></li>
+              <li><a href="" class="instagram" target="_blank"><i class="icon-instagram"></i><span class="visuallyhidden" aria-hidden="true">Instagram</span></a></li>
+            </ul>
+
+            <div class="np-single-share">
+              <share-button class="sharer-0">Share this<div class="sb-social load sb-top sb-center networks-4">
+                  <ul>
+                    <li class="pinterest disabled" data-network="pinterest"><a onclick="return false"></a></li>
+                    <li class="twitter enabled" data-network="twitter"><a onclick="return false"></a></li>
+                    <li class="facebook enabled" data-network="facebook"><a onclick="return false"></a></li>
+                    <li class="whatsapp disabled" data-network="whatsapp"><a onclick="return false"></a></li>
+                    <li class="googlePlus enabled" data-network="googlePlus"><a onclick="return false"></a></li>
+                    <li class="reddit disabled" data-network="reddit"><a onclick="return false"></a></li>
+                    <li class="linkedin enabled" data-network="linkedin"><a onclick="return false"></a></li>
+                    <li class="email disabled" data-network="email"><a onclick="return false"></a></li>
+                  </ul>
+                </div>
+              </share-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+
+  <!--Text Carousel-->
+  <script src="js/slick.min.js"></script>
+  <script src="js/site.js"></script>
+  </footer>
+  <!--End of Footer -->
+
+</body>
+
+</html>
