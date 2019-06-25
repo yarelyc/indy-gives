@@ -17,6 +17,7 @@
    ========================================================================== */
 body, h2, h3, h4, h5, h6, .btn, .main-nav {
   font-family: "proxima-nova", sans-serif;
+  font-size: 1.0em;
 }
 
 body {
