@@ -1074,7 +1074,7 @@ textarea {
     font-style: normal
 }
 
-[class^="icon-"],[class*=" icon-"] {
+[class^="icon-"],[class*=" icon-"], .nonprofit-slider .slick-prev:before, .nonprofit-slider .slick-next:before {
     font-family: 'gives-font';
     speak: none;
     font-style: normal;
@@ -4354,7 +4354,7 @@ blockquote em {
 
 .favorites-title {
     display: inline-block;
-    background-image: url("images/fav-heart.png");
+    background-image: url("../assets/images/icons/fav-heart.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 15px auto;
@@ -4364,10 +4364,10 @@ blockquote em {
     transition: all 0.3s ease-in-out
 }
 
-.favorites-title:hover,.favorites-title.favored {
-    background-image: url("images/fav-heart-solid.png")
+.favorite-this-icon-w:hover{
+    background-image: url("../assets/images/icons/favoriteheart02-active.png");
+    background-repeat: no-repeat;
 }
-
 .np-title {
     color: #52429B;
     font-size: 1em;
@@ -5133,6 +5133,14 @@ ul.totals .days-left {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
+}
+
+.nonprofit-slider .slick-next::before{
+    content: "\f061" !important;
+}
+
+.nonprofit-slider .slick-prev::before{
+    content: "\f060" !important;
 }
 
 @media only screen and (max-width: 768px) {

@@ -103,3 +103,7 @@ $menulink.on("click", function(e) {
 
 
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+})
+
