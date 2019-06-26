@@ -2254,6 +2254,22 @@ nav.subnav ul li.youth-in-action.active a, nav.subnav ul li.youth-in-action a:ho
 .info-tooltip:hover{
     color: #D83B20;
 }
+.state-list{
+    width: 194px;
+}
+
+.country-line{
+    width: 454px;
+}
+.anonymous-checkbox{
+   font-size: 16px;
+   text-decoration: none;
+}
+.card-image{
+   max-width: 120px;
+   height: auto;
+   margin-bottom: 15px;
+}
 
 /* ==========================================================================
    THANK YOU PAGE

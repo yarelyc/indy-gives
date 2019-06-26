@@ -27,23 +27,23 @@
     <div class="container">
       <span class="countdown-text">TIME REMAINING<br>TO GIVE</span>
       <span id="countdown">
-          <div class="cd-segment days">
-            <span>00</span>
-            <span class="countdown-label">days</span>
-          </div>
-          <div class="cd-segment hours">
-            <span>00</span>
-            <span class="countdown-label">hr</span>
-          </div>
-          <div class="cd-segment mins">
-            <span>00</span>
-            <span class="countdown-label">min</span>
-          </div>
-          <div class="cd-segment secs">
-            <span>00</span>
-            <span class="countdown-label">sec</span>
-          </div>
-        </span>
+        <div class="cd-segment days">
+          <span>00</span>
+          <span class="countdown-label">days</span>
+        </div>
+        <div class="cd-segment hours">
+          <span>00</span>
+          <span class="countdown-label">hr</span>
+        </div>
+        <div class="cd-segment mins">
+          <span>00</span>
+          <span class="countdown-label">min</span>
+        </div>
+        <div class="cd-segment secs">
+          <span>00</span>
+          <span class="countdown-label">sec</span>
+        </div>
+      </span>
       <a href="#" class="logo">
         <img src="assets/images/indygive-logo.png" alt="">
       </a>
@@ -77,7 +77,7 @@
         <!-- //search button -->
       </nav>
     </div>
-    <div class="sidebar-fav sidebar-position" >
+    <div class="sidebar-fav sidebar-position">
       <div class="sidebar">
         <div class="favbar">
           <a class="fav-toggle" href="#">
@@ -99,7 +99,7 @@
                 </div>
               </div>
               <div class="favorites-loading-list"></div>
-              <div class="sidebar-align sidebar-bottom sidebar-position" >
+              <div class="sidebar-align sidebar-bottom sidebar-position">
                 Click or tap on any nonprofit to view their profile or to donate.
               </div>
             </div>
@@ -228,7 +228,7 @@
                       <option value="WI">Wisconsin</option>
                       <option value="WY">Wyoming</option>
                     </select>
-                    <div class="chosen-container chosen-container-single" style="width: 194px;" title="" id="c_state_chosen"><a class="chosen-single chosen-default" tabindex="-1"><span>Select State</span>
+                    <div class="chosen-container chosen-container-single state-list" title="" id="c_state_chosen"><a class="chosen-single chosen-default" tabindex="-1"><span>Select State</span>
                         <div><b></b></div>
                       </a>
                       <div class="chosen-drop">
@@ -484,7 +484,7 @@
                       <option value="ZW">ZIMBABWE</option>
                     </select>
 
-                    <div class="chosen-container chosen-container-single" style="width: 454px;" title="" id="c_country_chosen"><a class="chosen-single" tabindex="-1"><span>UNITED STATES</span>
+                    <div class="chosen-container chosen-container-single country-line" title="" id="c_country_chosen"><a class="chosen-single" tabindex="-1"><span>UNITED STATES</span>
                         <div><b></b></div>
                       </a>
                       <div class="chosen-drop">
@@ -507,12 +507,16 @@
                   </div>
 
                   <div id="year-born-link">
-                    <a class="info-tooltip tooltip tooltipstered" data-container="body" href="#">Why do we
+                    <a class="info-tooltip tooltipstered" data-container="body" href="#">Why do we
                       ask?</a>
                   </div>
 
-
-                  <div class="cvv-link"><a href="467" class="info-tooltip cvv-tooltip tooltipstered">What is this?</a></div>
+                  <!-- <div class="tooltipster-base tooltipster-light tooltipster-fade tooltipster-fade-show" style="transition-duration: 350ms; animation-duration: 350ms; top: 909px; left: 132px;">
+                    <div class="tooltipster-content">The whole point of Give! is that everyone can be a philanthropist — no matter how old you are or how much you have to give. That’s why our donation minimum is only $10, and it’s why we offer special prizes to
+                      participating nonprofits that make efforts to connect with kids and adults age 36 and younger. This is to encourage younger people to donate and become more active in the nonprofit community. Research shows that younger adults give less often
+                      than their elders, but once they start, they continue to give back throughout their lives. Thank you for giving us your birth year (we won't tell).</div>
+                    <div class="tooltipster-arrow-top tooltipster-arrow" style=""><span class="tooltipster-arrow-border" style="margin-bottom: -1px; border-color: rgb(204, 204, 204);;"></span><span style="border-color:rgb(237, 237, 237);"></span></div>
+                  </div> -->
 
 
                   <div class="clearfix"></div>
@@ -544,16 +548,22 @@
                       Name <input id="giftname" name="giftname2" type="text"></label><br>
                   </div>
 
-                  <label style="font-size: 16px;" for="anonymous" class="info-tooltip tooltip tooltipstered" data-container="body">I want my gift to be Anonymous
+                  <label class="anonymous-checkbox" for="anonymous" class="info-tooltip tooltipstered" data-container="body">I want my gift to be Anonymous
                     <input type="checkbox" id="anonymous" name="anonymous" value="1">
                     <input type="hidden" id="young_donor" name="young_donor" value="0">
                   </label>
                 </div>
 
+                <!-- <div class="tooltipster-base tooltipster-light tooltipster-fade tooltipster-fade-show" style="transition-duration: 350ms; animation-duration: 350ms; top: 1318px; left: 80px;">
+                  <div class="tooltipster-content">You're too humble! If you select anonymous, this means the nonprofits you donate to will not receive your name or contact information, so they can't thank you directly or update you on how your donation is making a
+                    difference. Anonymous or not, Give! never shares donor information publicly, unless requested by the donor. </div>
+                  <div class="tooltipster-arrow-top tooltipster-arrow" style=""><span class="tooltipster-arrow-border" style="margin-bottom: -1px; border-color: rgb(204, 204, 204);;"></span><span style="border-color:rgb(237, 237, 237);"></span></div>
+                </div> -->
+
+
                 <div class="col-6">
                   <h3>Payment Info</h3>
-                  <img style="max-width: 120px; height: auto; margin-bottom: 15px;" src="https://indygivestage.wpengine.com/wp-content/themes/mc-gives/images/creditcards.png" alt="Credit Cards">
-
+                  <img class="card-image"  src="assets/images/creditcards.png" alt="Credit Cards">
                   <div id="card-holder-name">
                     <label id="ch-name-label" for="c_card_holder_fname">Name on Credit Card *</label>
                     <div class="input-half"><input type="text" id="c_card_holder_fname" name="c_card_holder_fname" placeholder="First Name" autocomplete="off" value="" required=""></div>
@@ -609,14 +619,23 @@
                       <input type="text" id="c_cvv" name="c_cvv" maxlength="4" autocomplete="off" class="numeric" required="">
                     </label>
                   </div>
-                  <div class="cvv-link"><a href="467" class="info-tooltip cvv-tooltip tooltipstered">What is this?</a></div>
+                  <div class="cvv-link"><a href="467" class="info-tooltip cvv-tooltip tooltipstered ">What is this?</a>
+                  </div>
+
                   <div class="clearfix"></div>
                   <!--Promo Code Field-->
                   <label for="c_promo_code">Promo Code
                     <input id="c_promo_code" name="promo_code" class="" value="" type="text">
                   </label>
-                  <div style="position:static;font-size: inherit;" class="reward-checkout info-tooltip tooltip tooltipstered" data-container="body"><input class="receive-rewards" type="radio" value="recive_rewards" id="recive_rewards" name="receive_rewards"
+
+                  <div style="position:static;font-size: inherit;" class="reward-checkout info-tooltip tooltipstered" data-container="body"><input class="receive-rewards" type="radio" value="recive_rewards" id="recive_rewards" name="receive_rewards"
                       checked="checked"> I want to receive rewards<br></div>
+
+                <!--  <div class="tooltipster-base tooltipster-light tooltipster-fade tooltipster-fade-show" style="transition-duration: 350ms; animation-duration: 350ms; top: 744px; left: 521px;">
+                    <div class="tooltipster-content">When you accept Rewards, our donating business partners may receive your email address.</div>
+                    <div class="tooltipster-arrow-top tooltipster-arrow" style=""><span class="tooltipster-arrow-border" style="margin-bottom: -1px; border-color: rgb(204, 204, 204);;"></span><span style="border-color:rgb(237, 237, 237);"></span></div>
+                  </div> -->
+
                   <div class="reward-checkout"><input class="receive-rewards" type="radio" value="give_rewards" id="give_rewards" name="receive_rewards"> I want to give my rewards to someone else<br></div>
                   <div class="reward-checkout"><input class="receive-rewards" type="radio" value="no_rewards" id="no_rewards" name="receive_rewards"> I don't want to receive rewards<br></div>
                   <input type="hidden" id="under_17" name="under_17" value="">
@@ -773,6 +792,80 @@
 
     <!-- Donate Masonry Grid -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.donate-checkout .reward-checkout input:radio').click(function() {
+          if ($(this).val() === 'recive_rewards') {
+            if ($(".left-sidebar .npid-np-5494").length > 0) {
+              $('#rewards-59-boost').addClass("boost-reward-section");
+            }
+          }
+        });
+        $('.cvv-tooltip').click(function(event) {
+
+          event.preventDefault();
+
+        });
+
+        $('.cvv-tooltip').tooltipster({
+          content: $('<span><img src="https://indygivestage.wpengine.com/wp-content/themes/mc-gives/images/cvv.gif" /></span>'),
+          theme: 'tooltipster-light'
+
+        });
+
+
+
+        $('input[name="gifttype"]').change(function() {
+
+          if ($(this).val() == 2) {
+
+            $('div#subform_iho').show();
+
+            $('div#subform_imo').hide();
+
+          } else if ($(this).val() == 3) {
+
+            $('div#subform_imo').show();
+
+            $('div#subform_iho').hide();
+
+          } else {
+
+            $('div#subform_imo').hide();
+
+            $('div#subform_iho').hide();
+
+          }
+        });
+
+        $("#reward_email").hide();
+        $('.receive-rewards').click(function() {
+
+          if ($(this).val() == 'give_rewards') {
+            $("#reward_email").show();
+
+          } else {
+            $("#reward_email").hide();
+
+          }
+        });
+
+
+        $("#c_year_born").change(function() {
+          var donat_year = $(this).val();
+          var current_date = new Date();
+          var currentYear = current_date.getFullYear();
+          var age = currentYear - donat_year;
+          if (age >= 18 && age <= 35) {
+            $("#young_donor").val(1);
+          } else {
+            $("#young_donor").val(0);
+          }
+        })
+      });
+    </script>
+
   </footer>
   <!--End of Footer -->
 </body>
