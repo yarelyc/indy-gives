@@ -2270,7 +2270,23 @@ nav.subnav ul li.youth-in-action.active a, nav.subnav ul li.youth-in-action a:ho
    height: auto;
    margin-bottom: 15px;
 }
-
+.error-message-color{
+   color:red;
+}
+.radio-width{
+   width: 20%;
+}
+.expiration-width{
+  min-width:165px !important;
+}
+.receive-rewards{
+   position:static;
+   font-size: inherit;
+   text-decoration: none;
+}
+.receive-rewards:hover{
+  color: #373e42;
+}
 /* ==========================================================================
    THANK YOU PAGE
    ========================================================================== */

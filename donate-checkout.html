@@ -523,11 +523,11 @@
 
                   <br>
                   <label class="control-label">How would you like to give a gift?</label>
-                  <input style="width: 20%;" name="gifttype" type="radio" class="radioGiftType" checked="checked" value="1">
+                  <input name="gifttype" type="radio" class="radioGiftType" checked="checked" value="1">
                   <label>This is not an honorary or memorial gift</label>
-                  <input style="width: 20%;" name="gifttype" type="radio" class="radioGiftType" value="2">
+                  <input name="gifttype" type="radio" class="radioGiftType" value="2">
                   <label>This is an honorary gift</label>
-                  <input style="width: 20%;" name="gifttype" type="radio" class="radioGiftType" value="3">
+                  <input name="gifttype" type="radio" class="radioGiftType" value="3">
                   <label>This is a memorial gift</label><br>
 
                   <div id="subform_iho" style="display: none;">
@@ -577,7 +577,7 @@
 
                   <div class="input-half" id="exp_month">
                     <label for="c_exp_month">Expiration Month *
-                      <select id="c_exp_month" name="exp_date_month" data-placeholder="Select Month" style="min-width:165px;" required="">
+                      <select id="c_exp_month" class="expiration-width"  name="exp_date_month" data-placeholder="Select Month"  required="">
                         <option value=""></option>
                         <option value="01">01 - Jan</option>
                         <option value="02">02 - Feb</option>
@@ -597,7 +597,7 @@
 
                   <div class="input-half last" id="exp_year">
                     <label for="c_exp_year">Expiration Year *
-                      <select id="c_exp_year" name="exp_date_year" data-placeholder="Select Year" style="min-width:165px;" required="">
+                      <select id="c_exp_year" class="expiration-width" name="exp_date_year" data-placeholder="Select Year" required="">
                         <option value=""></option>
                         <option value="19">2019</option>
                         <option value="20">2020</option>
@@ -628,7 +628,7 @@
                     <input id="c_promo_code" name="promo_code" class="" value="" type="text">
                   </label>
 
-                  <div style="position:static;font-size: inherit;" class="reward-checkout info-tooltip tooltipstered" data-container="body"><input class="receive-rewards" type="radio" value="recive_rewards" id="recive_rewards" name="receive_rewards"
+                  <div class="reward-checkout info-tooltip tooltipstered receive-rewards" data-container="body"><input class="receive-rewards" type="radio" value="recive_rewards" id="recive_rewards" name="receive_rewards"
                       checked="checked"> I want to receive rewards<br></div>
 
                 <!--  <div class="tooltipster-base tooltipster-light tooltipster-fade tooltipster-fade-show" style="transition-duration: 350ms; animation-duration: 350ms; top: 744px; left: 521px;">
@@ -646,7 +646,7 @@
                     </label>
                   </div>
                   <input type="submit" name="checkout_submit" class="checkout-btn" value="Submit">
-                  <div class="custom-error-message" style="color:red">
+                  <div class="custom-error-message error-message-color" >
                     <br clear="all">
                   </div>
                 </div>
