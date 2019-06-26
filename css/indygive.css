@@ -1339,6 +1339,13 @@ share-button:before {
 .slider-width{
    width: 722px;
 }
+.slider-padding{
+   padding: 1em;
+}
+.spinning-gear-position{
+  margin-left: 10px;
+  display: none;
+}
 
 
 
