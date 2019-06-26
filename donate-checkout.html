@@ -11,21 +11,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <!-- Fancybox -->
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-  <!-- Font Awesome Pro 5.2.0 -->
-  <link rel="stylesheet" href="css/all.min.css">
-
-  <!-- Animation stylesheet -->
-  <link rel="stylesheet" href="css/animate.css?v=1.01.01">
-
-  <!-- AOS stylesheet -->
-  <link rel="stylesheet" href="css/aos.css">
-
-  <!--Text Carousel-->
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/remodal.css">
@@ -36,6 +21,95 @@
 </head>
 
 <body>
+
+<!-- Menu -->
+<header role="banner">
+  <div class="container">
+    <span class="countdown-text">TIME REMAINING<br>TO GIVE</span>
+    <span id="countdown">
+        <div class="cd-segment days">
+          <span>00</span>
+          <span class="countdown-label">days</span>
+        </div>
+        <div class="cd-segment hours">
+          <span>00</span>
+          <span class="countdown-label">hr</span>
+        </div>
+        <div class="cd-segment mins">
+          <span>00</span>
+          <span class="countdown-label">min</span>
+        </div>
+        <div class="cd-segment secs">
+          <span>00</span>
+          <span class="countdown-label">sec</span>
+        </div>
+      </span>
+    <a href="#" class="logo">
+      <img src="assets/images/indygive-logo.png" alt="">
+    </a>
+
+    <a class="navicon" href="#"><i class="icon-bars"></i></a>
+    <nav class="main-nav" role="navigation">
+      <div class="menu-mc_gives-container">
+        <ul id="menu-mc_gives" class="menu">
+          <li id="menu-item-5369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5369"><a href="nonprofits.html">Meet Our Nonprofits</a></li>
+          <li id="menu-item-145" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-145"><a>How does it work?</a>
+            <ul class="sub-menu">
+              <li id="menu-item-6931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6931"><a href="how-to-donate.html">How to donate</a></li>
+              <li id="menu-item-6932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6932"><a href="donate.html">Donate</a></li>
+              <li id="menu-item-2530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2530"><a href="sponsors-partner.html">Sponsors/Partners</a></li>
+              <li id="menu-item-6933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6933"><a href="rewards.html">Rewards</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-805" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-805"><a>Leaderboard</a>
+            <ul class="sub-menu">
+              <li id="menu-item-6934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6934"><a href="donation-amount.html">Total Donations</a></li>
+              <li id="menu-item-6936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6936"><a href="number-of-donors.html">Number of Donors</a></li>
+              <li id="menu-item-6935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6935"><a href="total-young-donors.html">Total Young Donors</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-6937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6937"><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div> <a class="cart-btn" href="/donate"><i class="icon-shopping-cart" aria-hidden="true"></i><span class="visuallyhidden">View cart</span></a>
+
+      <!-- search button -->
+      <a class="search-pop" href="#search-pop"><i class="icon-search" aria-hidden="true"></i></a>
+      <!-- //search button -->
+    </nav>
+  </div>
+  <div class="sidebar-fav sidebar-position" >
+    <div class="sidebar">
+      <div class="favbar">
+        <a class="fav-toggle" href="#">
+          <i class="icon-heart" aria-hidden="true"></i>
+        </a>
+        <div class="upper">
+          <div class="favorite-links-list favorites" id="fav-flyout">
+            <h4 class="sidebar-align">Favorite Nonprofits</h4>
+            <div id="favorite-links-list-flyout" class="favorite-list favorite-div">
+              <div class="favorite_link" data-id="5191">
+                <a href="#">Non-Profit Name</a>
+                <span class="delete_from_favorites" data-id="5191"> x </span>
+                <br><br>
+              </div>
+              <div class="favorite_link" data-id="4974">
+                <a href="#">Non-Profit Name</a>
+                <span class="delete_from_favorites" data-id="4974"> x </span>
+                <br><br>
+              </div>
+            </div>
+            <div class="favorites-loading-list"></div>
+            <div class="sidebar-align sidebar-bottom sidebar-position" >
+              Click or tap on any nonprofit to view their profile or to donate.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End of Menu -->
+
   <section>
     <div class="container">
       <div class="masthead">
@@ -542,13 +616,20 @@
                   <label for="c_promo_code">Promo Code
                     <input id="c_promo_code" name="promo_code" class="" value="" type="text">
                   </label>
-                  <div style="position:static;font-size: inherit;" class="reward-checkout info-tooltip tooltip tooltipstered" data-container="body"><input class="receive-rewards" type="radio" value="recive_rewards" id="recive_rewards" name="receive_rewards"
-                      checked="checked"> I want to receive rewards<br></div>
-                  <div class="reward-checkout"><input class="receive-rewards" type="radio" value="give_rewards" id="give_rewards" name="receive_rewards"> I want to give my rewards to someone else<br></div>
-                  <div class="reward-checkout"><input class="receive-rewards" type="radio" value="no_rewards" id="no_rewards" name="receive_rewards"> I don't want to receive rewards<br></div>
+                 <!-- <div class="reward-checkout">
+                    <input class="receive-rewards" type="radio" value="recive_rewards" id="recive_rewards" name="receive_rewards" checked="checked"> I want to receive rewards<br>
+                  </div> -->
+
+                  <div style="position:static; font-size: inherit;" class="reward-checkout info-tooltip tooltip" data-toggle="tooltip" title="When you accept Rewards, our donating business partners may receive your email address.">
+                    <input class="receive-rewards" type="radio" value="recive_rewards" id="recive_rewards" name="receive_rewards" checked="checked"> I want to receive rewards<br>
+                  </div>
+                  <div class="reward-checkout">
+                    <input class="receive-rewards" type="radio" value="give_rewards" id="give_rewards" name="receive_rewards"> I want to give my rewards to someone else<br></div>
+                  <div class="reward-checkout">
+                    <input class="receive-rewards" type="radio" value="no_rewards" id="no_rewards" name="receive_rewards"> I don't want to receive rewards<br></div>
                   <input type="hidden" id="under_17" name="under_17" value="">
                   <div class="reward_email" id="reward_email" style="display: none;">
-                    <label for="give rewards">
+                    <label for="give_rewards">
                       Email *
                       <input type="email" id="give_reward_email" name="give_reward_email" placeholder="Enter  email" required="">
                     </label>
@@ -690,16 +771,16 @@
     </div>
     <div id="wrapper" class="remodal-bg remodal-is-closed"></div>
 
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="js/plugins.js"></script>
+
+    <!-- Donate Masonry Grid -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <!--Text Carousel-->
     <script src="js/slick.min.js"></script>
     <script src="js/site.js"></script>
 
-    <!-- Donate Masonry Grid -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
   </footer>
   <!--End of Footer -->
 </body>

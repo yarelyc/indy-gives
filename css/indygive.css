@@ -1416,10 +1416,6 @@ share-button:before {
   margin: 0;
 }
 
-.favorites-title:hover {
-  background: none;
-}
-
 .favorites-box {
   background: #E0F2F8;
   padding: 20px;
@@ -1479,7 +1475,11 @@ share-button:before {
 
 .nonprofit-slider .slick-prev:before, .nonprofit-slider .slick-next:before {
   color: #FA6A34 !important;
-  font-size: 36px !important;
+  font-size: 20px !important;
+  background: white;
+  border-radius: 50px;
+  padding: .25em .35em;
+  border: 4px solid;
 }
 
 .nonprofit-slider {
@@ -1499,7 +1499,7 @@ share-button:before {
 }
 
 .nonprofit-slider .slick-prev, .nonprofit-slider .slick-next {
-  bottom: -12px !important;
+  bottom: -40px !important;
   top: auto;
 }
 
