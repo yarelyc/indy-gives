@@ -1,0 +1,96 @@
+/* Give date in header */
+
+.give-date {
+  position: absolute;
+  border-bottom: 4px solid rgba(255,255,255,0.3);
+  color: #a696d8;
+  float: left;
+  display: inline-block;
+  left: 78px;
+  margin-left: 14px;
+  bottom: 0;
+  font-size: 0.875em;
+}
+
+.row [class*="col-4"] {
+
+  margin-left: 1.5% !important;
+}
+
+.np-box{
+  text-align: center !important;
+}
+
+.np-box a p{
+  text-align: left !important;
+}
+
+.np-box img {
+    border-radius: 5px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 115px !important;
+    max-height: 160px !important;
+    width: auto !important;
+}
+
+.non-profit-side li p{
+    margin: .25em 0em;
+    font-size: .85em;
+}
+
+.non-profit-side li strong{
+    font-size: .90em;
+}
+
+.non-profit-side li img{
+    max-width: 50px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .give-date {display:none;}
+}
+
+.total-raised .amt-large {
+  position: relative;
+  z-index: 90;
+}
+
+.logo-list li {
+  width: 31% !important;
+
+}
+
+/* Goal meter fixes/improvements */
+
+.initial-goal-label {
+  margin-left:-112px;
+}
+
+@media only screen and (max-width: 960px) {
+  .initial-goal-label { margin-left:-102px;}
+}
+
+@media only screen and (max-width: 768px) {
+  .initial-goal-label { margin-left:-95px;}
+}
+
+span.goal2 {
+  position: absolute;
+  float: none;
+  bottom: 7px;
+  height: 11px;
+}
+
+@media only screen and (max-width: 640px) {
+  #stats-section .stats.col-6 {
+   padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .total-raised .amt-large {
+      font-size: 1.7em;
+  }
+}

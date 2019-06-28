@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Indy Gives</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/mcgive.css">
+  <link rel="stylesheet" href="css/2017.css">
+
+
+
+</head>
+
+<body class="home">
+
+  <header role="banner">
+    <div class="container">
+      <div class="header-search">
+        <form method="get" id="searchform" class="searchform" action="https://www.montereycountygives.com/" role="search">
+          <input type="search" class="field" name="s" value="" id="s" placeholder="Search...">
+          <input type="image" src="https://www.montereycountygives.com/wp-content/themes/mc-gives/images/search_icon.png" class="submit" id="searchsubmit" value="Search">
+        </form><span style="position:absolute;visibility:collapse;"><a href="http://rusbankinfo.ru">займы онлайн</a><a href="http://rusbankinfo.ru/credits.html">кредит наличными</a></span>
+      </div>
+
+      <span id="countdown">
+        <div class="cd-segment days"><span>131</span> <span class="countdown-label">days</span></div>
+        <div class="cd-segment hours"><span>11</span> <span class="countdown-label">hr</span></div>
+        <div class="cd-segment mins"><span>09</span> <span class="countdown-label">min</span></div>
+        <div class="cd-segment secs"><span>52</span> <span class="countdown-label">sec</span></div>
+      </span>
+
+      <a href="https://www.montereycountygives.com" class="logo">
+        <img src="https://www.montereycountygives.com/wp-content/uploads/2017/11/mcgives_logo-nw.png" alt="">
+      </a>
+
+      <div class="give-date">Nov 7 - Dec 31, 2019</div>
+      <a class="donate-btn" href="https://www.montereycountygives.com/donate">Donate</a>
+      <a class="navicon" href="#"><i class="icon-bars"></i></a>
+      <nav class="main-nav" role="navigation">
+        <div class="menu-mc_gives-container">
+          <ul id="menu-mc_gives" class="menu">
+            <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://www.montereycountygives.com/nonprofits/">Meet Our Nonprofits</a></li>
+            <li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://www.montereycountygives.com/partners-sponsors/">Sponsors/Partners</a></li>
+            <li id="menu-item-805" class="menu-more menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-805"><a href="#">Leaderboard</a>
+              <ul class="sub-menu">
+                <li id="menu-item-803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-803"><a href="https://www.montereycountygives.com/leaderboard/donation-amount/">Total Donations</a></li>
+                <li id="menu-item-1109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1109"><a href="https://www.montereycountygives.com/leaderboard/number-of-donors/">Number of Donors</a></li>
+                <li id="menu-item-801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-801"><a href="https://www.montereycountygives.com/leaderboard/total-young-donors/">Total Young Donors</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="https://www.montereycountygives.com/faqs/">FAQs</a></li>
+          </ul>
+        </div>
+        <a class="cart-btn" href="/donate"><i class="icon-shopping-cart" aria-hidden="true"></i><span class="visuallyhidden">View cart</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Header Slider -->
+  <div class="hero">
+    <div class="home-slider owl-carousel owl-theme" style="display: block; opacity: 1;">
+      <div class="owl-wrapper-outer">
+        <div class="owl-wrapper" style="display: block; width: 22400px; left: 0px; transition: all 800ms ease 0s; transform: translate3d(-8400px, 0px, 0px);">
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/08/Junipero-Serra-Kids-Donate.jpg');" class="item"><a href="https://www.montereycountygives.com/nonprofit/alzheimers-association/" class="slider_link_overlay"
+                style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>Alzheimer’s Association</span></h2> <a href="https://www.montereycountygives.com/nonprofit/alzheimers-association/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/07/Creating-Hope-for-Species-Recovery-1.png');" class="item"><a href="https://www.montereycountygives.com/nonprofit/ventana-wildlife-society/"
+                class="slider_link_overlay" style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>Ventana Wildlife Society</span></h2> <a href="https://www.montereycountygives.com/nonprofit/ventana-wildlife-society/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/07/374377_560836753933379_157926217_n-1.jpg');" class="item"><a href="https://www.montereycountygives.com/nonprofit/peacock-acres/" class="slider_link_overlay"
+                style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>Peacock Acres</span></h2> <a href="https://www.montereycountygives.com/nonprofit/peacock-acres/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/07/1-Wesley-SOCO-1.jpg');" class="item"><a href="https://www.montereycountygives.com/nonprofit/youth-music-monterey-county/" class="slider_link_overlay"
+                style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>Youth Music Monterey County</span></h2> <a href="https://www.montereycountygives.com/nonprofit/youth-music-monterey-county/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/07/Halls-Table-MM-1.jpg');" class="item"><a href="https://www.montereycountygives.com/nonprofit/everyones-harvest/" class="slider_link_overlay"
+                style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>Everyone’s Harvest</span></h2> <a href="https://www.montereycountygives.com/nonprofit/everyones-harvest/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/07/AFRP-Bottle-Puppy1-1.jpg');" class="item"><a href="https://www.montereycountygives.com/nonprofit/animal-friends-rescue-project/" class="slider_link_overlay"
+                style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>Animal Friends Rescue Project</span></h2> <a href="https://www.montereycountygives.com/nonprofit/animal-friends-rescue-project/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/11/2018-Maxs-Helping-Paw.jpg');" class="item"><a href="https://www.montereycountygives.com/nonprofit/maxs-helping-paws-foundation/" class="slider_link_overlay"
+                style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>Max’s Helping Paws Foundation</span></h2> <a href="https://www.montereycountygives.com/nonprofit/maxs-helping-paws-foundation/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-item" style="width: 1400px;">
+            <div style="background-image: url('https://www.montereycountygives.com/wp-content/uploads/2018/07/I-HELP-Busr-1.jpg');" class="item"><a href="https://www.montereycountygives.com/nonprofit/i-help-interfaith-homeless-emergency-lodging-program/"
+                class="slider_link_overlay" style="width:100%; height:100%; position:absolute; z-index:999;"></a>
+              <div class="container">
+                <div class="slide-text">
+                  <h2><span>I-HELP Interfaith Homeless Emergency Lodging Program</span></h2> <a href="https://www.montereycountygives.com/nonprofit/i-help-interfaith-homeless-emergency-lodging-program/" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-controls">
+        <div class="owl-pagination">
+          <div class="owl-page"><span class=""></span></div>
+          <div class="owl-page"><span class=""></span></div>
+          <div class="owl-page"><span class=""></span></div>
+          <div class="owl-page"><span class=""></span></div>
+          <div class="owl-page"><span class=""></span></div>
+          <div class="owl-page"><span class=""></span></div>
+          <div class="owl-page active"><span class=""></span></div>
+          <div class="owl-page"><span class=""></span></div>
+        </div>
+        <div class="owl-buttons">
+          <div class="owl-prev"></div>
+          <div class="owl-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="container">
+    <div id="stats-section">
+      <div class="row">
+        <div class="stats col-6" style="margin-top: 28px;">
+
+          <div class="total-raised">
+            <span class="stats-label-sm">Total Raised</span>
+            <span class="amt-large">$5,447,280.08</span>
+            <div class="stat-block">
+              <span class="stats-label-sm">Individual Donations</span>
+              <span class="amt-small">$3,955,580.55</span>
+            </div>
+            <div class="stat-block">
+              <span class="stats-label-sm">Overall Matching Fund</span>
+              <span class="amt-small">$508,722.00</span>
+            </div>
+            <div class="stat-block">
+              <span class="stats-label-sm">Organization Challenge Gifts</span>
+              <span class="amt-small">$982,977.53</span>
+            </div>
+          </div>
+          <div class="donors">
+            <span class="stats-label-sm">Donors</span>
+            <span class="amt-donors">4710</span>
+          </div>
+
+          <div class="meter-labels" style="position:relative">
+
+
+            <span class="start stats-label-sm">
+              <!--$5,447,280.08-->$0</span>
+            <span class="goal-label stats-label-sm initial-goal-label" style="position:absolute; left:88.8888888889%;">Initial Goal<br>$4,000,000.00</span>
+
+            <span class="end">
+              <span class="goal-label stats-label-sm" style="float:right;">OMG!<br>$4,500,000.00</span>
+            </span>
+          </div>
+
+          <div class="meter multiple-goals">
+            <span class="initial-goal" style="width: 88.8888888889%;"></span>
+            <span class="goal2" style="width: 32.1617795556%; left: 87.8888888889%;"></span>
+          </div>
+
+
+        </div>
+        <div class="leaderboard col-6">
+          <a style="display: inline-block; position: relative;" href="https://www.montereycountygives.com/leaderboard/donation-amount/">
+            <h2>Leaderboard</h2>
+          </a>
+          <div class="leaderboard-chart">
+            <div id="dv_chart_container_donations_by_nonprofit" data-highcharts-chart="0">
+              <div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 528px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg
+                  version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="528" height="400">
+                  <desc>Created with Highcharts 4.1.7</desc>
+                  <defs>
+                    <clipPath id="highcharts-1">
+                      <rect x="0" y="0" width="442" height="219"></rect>
+                    </clipPath>
+                  </defs>
+                  <rect x="0" y="0" width="528" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect>
+                  <g class="highcharts-grid" zIndex="1"></g>
+                  <g class="highcharts-grid" zIndex="1">
+                    <path fill="none" d="M 76 229.5 L 518 229.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path>
+                    <path fill="none" d="M 76 174.5 L 518 174.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path>
+                    <path fill="none" d="M 76 120.5 L 518 120.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path>
+                    <path fill="none" d="M 76 65.5 L 518 65.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path>
+                    <path fill="none" d="M 76 9.5 L 518 9.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path>
+                  </g>
+                  <g class="highcharts-axis" zIndex="2">
+                    <path fill="none" d="M 119.5 229 L 119.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 163.5 229 L 163.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 208.5 229 L 208.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 252.5 229 L 252.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 296.5 229 L 296.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 340.5 229 L 340.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 384.5 229 L 384.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 429.5 229 L 429.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 473.5 229 L 473.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 518.5 229 L 518.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                    <path fill="none" d="M 75.5 229 L 75.5 239" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><text x="297" zIndex="7" text-anchor="middle" transform="translate(0,0)" class=" highcharts-xaxis-title" style="color:#707070;fill:#707070;"
+                      visibility="visible" y="382.5387545675671">Nonprofits</text>
+                    <path fill="none" d="M 76 229.5 L 518 229.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path>
+                  </g>
+                  <g class="highcharts-axis" zIndex="2"><text x="23.703125" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 23.703125 119.5)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" visibility="visible"
+                      y="119.5">$</text></g>
+                  <g class="highcharts-series-group" zIndex="3">
+                    <g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(76,10) scale(1 1)" style="" clip-path="url(#highcharts-1)">
+                      <rect x="5" y="28" width="35" height="192" fill="#7cb5ec" rx="0" ry="0"></rect>
+                      <rect x="49" y="121" width="35" height="99" fill="#434348" rx="0" ry="0"></rect>
+                      <rect x="93" y="131" width="35" height="89" fill="#90ed7d" rx="0" ry="0"></rect>
+                      <rect x="137" y="149" width="35" height="71" fill="#f7a35c" rx="0" ry="0"></rect>
+                      <rect x="181" y="153" width="35" height="67" fill="#8085e9" rx="0" ry="0"></rect>
+                      <rect x="226" y="154" width="35" height="66" fill="#f15c80" rx="0" ry="0"></rect>
+                      <rect x="270" y="154" width="35" height="66" fill="#e4d354" rx="0" ry="0"></rect>
+                      <rect x="314" y="161" width="35" height="59" fill="#2b908f" rx="0" ry="0"></rect>
+                      <rect x="358" y="162" width="35" height="58" fill="#f45b5b" rx="0" ry="0"></rect>
+                      <rect x="402" y="164" width="35" height="56" fill="#91e8e1" rx="0" ry="0"></rect>
+                    </g>
+                    <g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(76,10) scale(1 1)" clip-path="none"></g>
+                  </g>
+                  <g class="highcharts-data-labels highcharts-tracker" visibility="visible" zIndex="6" transform="translate(76,10) scale(1 1)" style="" opacity="1"><text x="25.092724864350675" y="8" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 25.092724864350675 8)"
+                      style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;" text-anchor="middle">
+                      <tspan>350,009</tspan>
+                    </text><text x="69.09272486435067" y="101" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 69.09272486435067 101)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>180,100</tspan>
+                    </text><text x="113.09272486435067" y="111" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 113.09272486435067 111)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>163,067</tspan>
+                    </text><text x="157.09272486435069" y="129" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 157.09272486435069 129)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>128,903</tspan>
+                    </text><text x="201.09272486435069" y="133" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 201.09272486435069 133)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>122,830</tspan>
+                    </text><text x="246.09272486435069" y="134" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 246.09272486435069 134)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>120,873</tspan>
+                    </text><text x="290.09272486435066" y="134" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 290.09272486435066 134)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>120,600</tspan>
+                    </text><text x="334.09272486435066" y="141" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 334.09272486435066 141)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>108,081</tspan>
+                    </text><text x="378.09272486435066" y="142" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 378.09272486435066 142)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>105,416</tspan>
+                    </text><text x="422.09272486435066" y="144" r="0" padding="5" zIndex="1" transform="translate(0,0) rotate(-45 422.09272486435066 144)" style="color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px; text-rendering: geometricprecision;"
+                      text-anchor="middle">
+                      <tspan>102,434</tspan>
+                    </text></g>
+                  <g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="100.69272486435068" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:132;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 100.69272486435068 245)"
+                      y="245" opacity="1">
+                      <tspan>Peace of Mind Dog Re…</tspan>
+                      <title>Peace of Mind Dog Rescue</title>
+                    </text><text x="144.8927248643507" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 144.8927248643507 245)" y="245"
+                      opacity="1">
+                      <tspan>Rancho Cielo Youth Campus</tspan>
+                    </text><text x="189.09272486435069" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 189.09272486435069 245)" y="245"
+                      opacity="1">
+                      <tspan>Food Bank for Monterey County</tspan>
+                    </text><text x="233.2927248643507" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 233.2927248643507 245)" y="245"
+                      opacity="1">
+                      <tspan>Gathering for Women</tspan>
+                    </text><text x="277.49272486435063" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 277.49272486435063 245)" y="245"
+                      opacity="1">
+                      <tspan>Big Sur Volunteer Fire Brigade</tspan>
+                    </text><text x="321.6927248643507" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 321.6927248643507 245)" y="245"
+                      opacity="1">
+                      <tspan>LandWatch Monterey County</tspan>
+                    </text><text x="365.89272486435067" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 365.89272486435067 245)" y="245"
+                      opacity="1">
+                      <tspan>Big Sur Land Trust</tspan>
+                    </text><text x="410.09272486435066" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 410.09272486435066 245)" y="245"
+                      opacity="1">
+                      <tspan>Youth Orchestra Salinas</tspan>
+                    </text><text x="454.2927248643507" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 454.2927248643507 245)" y="245"
+                      opacity="1">
+                      <tspan>Planned Parenthood Mar Monte</tspan>
+                    </text><text x="498.49272486435063" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:400px;text-overflow:ellipsis;" text-anchor="end" transform="translate(0,0) rotate(-45 498.49272486435063 245)" y="245"
+                      opacity="1">
+                      <tspan>Monterey Symphony</tspan>
+                    </text></g>
+                  <g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="61" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:164px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="234"
+                      opacity="1">0k</text><text x="61" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:164px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="179" opacity="1">100k</text><text x="61" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:164px;text-overflow:clip;"
+                      text-anchor="end" transform="translate(0,0)" y="124" opacity="1">200k</text><text x="61" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:164px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)"
+                      y="69" opacity="1">300k</text><text x="61" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:164px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="15" opacity="1">400k</text></g>
+                  <g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)">
+                    <path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black"
+                      stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path>
+                    <path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black"
+                      stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path>
+                    <path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black"
+                      stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path>
+                    <path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"></path><text x="8"
+                      zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="20"></text>
+                  </g><text x="518" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">Highcharts.com</text>
+                </svg></div>
+            </div>
+            <input type="hidden" name="hdn-donations-by-nonprofit" value="[{&quot;ID&quot;:&quot;15704&quot;,&quot;post_title&quot;:&quot;Peace of Mind Dog Rescue&quot;,&quot;post_name&quot;:&quot;peace-of-mind-dog-rescue&quot;,&quot;dod_amount&quot;:&quot;299853.10&quot;,&quot;from_grants&quot;:&quot;50156.45&quot;,&quot;total_sum&quot;:&quot;350009.55&quot;},{&quot;ID&quot;:&quot;15414&quot;,&quot;post_title&quot;:&quot;Rancho Cielo Youth Campus&quot;,&quot;post_name&quot;:&quot;rancho-cielo-youth-campus&quot;,&quot;dod_amount&quot;:&quot;150100.05&quot;,&quot;from_grants&quot;:&quot;30000.00&quot;,&quot;total_sum&quot;:&quot;180100.05&quot;},{&quot;ID&quot;:&quot;15523&quot;,&quot;post_title&quot;:&quot;Food Bank for Monterey County&quot;,&quot;post_name&quot;:&quot;food-bank-for-monterey-county&quot;,&quot;dod_amount&quot;:&quot;158567.36&quot;,&quot;from_grants&quot;:&quot;4500.00&quot;,&quot;total_sum&quot;:&quot;163067.36&quot;},{&quot;ID&quot;:&quot;15488&quot;,&quot;post_title&quot;:&quot;Gathering for Women&quot;,&quot;post_name&quot;:&quot;gathering-for-women&quot;,&quot;dod_amount&quot;:&quot;78903.30&quot;,&quot;from_grants&quot;:&quot;50000.00&quot;,&quot;total_sum&quot;:&quot;128903.30&quot;},{&quot;ID&quot;:&quot;15633&quot;,&quot;post_title&quot;:&quot;Big Sur Volunteer Fire Brigade&quot;,&quot;post_name&quot;:&quot;big-sur-volunteer-fire-brigade&quot;,&quot;dod_amount&quot;:&quot;122830.97&quot;,&quot;from_grants&quot;:null,&quot;total_sum&quot;:&quot;122830.97&quot;},{&quot;ID&quot;:&quot;15728&quot;,&quot;post_title&quot;:&quot;LandWatch Monterey County&quot;,&quot;post_name&quot;:&quot;landwatch-monterey-county&quot;,&quot;dod_amount&quot;:&quot;68332.00&quot;,&quot;from_grants&quot;:&quot;52541.99&quot;,&quot;total_sum&quot;:&quot;120873.99&quot;},{&quot;ID&quot;:&quot;15490&quot;,&quot;post_title&quot;:&quot;Big Sur Land Trust&quot;,&quot;post_name&quot;:&quot;big-sur-land-trust&quot;,&quot;dod_amount&quot;:&quot;50947.05&quot;,&quot;from_grants&quot;:&quot;69653.94&quot;,&quot;total_sum&quot;:&quot;120600.99&quot;},{&quot;ID&quot;:&quot;15710&quot;,&quot;post_title&quot;:&quot;Youth Orchestra Salinas&quot;,&quot;post_name&quot;:&quot;youth-orchestra-salinas&quot;,&quot;dod_amount&quot;:&quot;101081.87&quot;,&quot;from_grants&quot;:&quot;7000.00&quot;,&quot;total_sum&quot;:&quot;108081.87&quot;},{&quot;ID&quot;:&quot;15732&quot;,&quot;post_title&quot;:&quot;Planned Parenthood Mar Monte&quot;,&quot;post_name&quot;:&quot;planned-parenthood-mar-monte&quot;,&quot;dod_amount&quot;:&quot;84016.79&quot;,&quot;from_grants&quot;:&quot;21400.00&quot;,&quot;total_sum&quot;:&quot;105416.79&quot;},{&quot;ID&quot;:&quot;15603&quot;,&quot;post_title&quot;:&quot;Monterey Symphony&quot;,&quot;post_name&quot;:&quot;monterey-symphony&quot;,&quot;dod_amount&quot;:&quot;61434.75&quot;,&quot;from_grants&quot;:&quot;41000.00&quot;,&quot;total_sum&quot;:&quot;102434.75&quot;}]">
+          </div>
+          <a style="float: right; margin-top: 25px; font-size: 0.875em;" href="https://www.montereycountygives.com/leaderboard/donation-amount/" class="btn">View All Stats</a>
+        </div>
+      </div>
+
+      <ul class="totals">
+        <li class="individual-donations">
+          <span class="totals-amt">$3,955,580.55</span>
+          <span class="amt-small">Individual Donations</span>
+        </li>
+        <li class="avg-donation">
+          <span class="totals-amt">$374.48</span>
+          <span class="amt-small">Average Donation Made</span>
+        </li>
+        <li class="largest-donation">
+          <span class="totals-amt">$154,822.94</span>
+          <span class="amt-small">Largest Donation So Far</span>
+        </li>
+        <li class="days-left">
+          <span class="totals-amt">130</span>
+          <span class="amt-small"> Days Until Start Next Campaign</span>
+        </li>
+      </ul>
+    </div><!-- /stats-section -->
+  </div>
+
+
+  <div class="home-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h1>Joining Together for Big Ideas:</h1>
+          <h1>Reach for the Stars</h1>
+          <h3><strong>Welcome to the 2018 Monterey County Gives!</strong></h3>
+          <p>Nonprofits are a&nbsp;cornerstone of our community. Whether you’ve attended&nbsp;local arts or music events, received legal support or health care services, adopted a pet, or enrolled your child in a special after school program,
+            chances are high you’ve interfaced with a dozen or more groups — in recent months.</p>
+          <p>Without the more than 1,000 local nonprofits working tirelessly to fulfill their missions — everyday — our community would look and feel like a very different place.</p>
+          <p>And each needs your support, however that comes forward.</p>
+          <h3><strong>We’ve been on the frontlines to witness local nonprofits’ broad-reaching impact.</strong></h3>
+          <p>More than a decade ago, the Weekly decided we could leverage our resources and create a new program&nbsp;for local philanthropy — to&nbsp;support the nonprofit community even more. We first&nbsp;established the Monterey County Weekly
+            Community Fund as a donor-advised fund at the Community Foundation for Monterey County (CFMC) in 2000. In 2009, we created an annual appeal to our readers — Monterey County Gives! Today Monterey County Gives! is a Special Project of
+            Monterey County Weekly in partnership with CFMC, enabling you to even donate via your IRA retirement fund.</p>
+          <p>In last year’s campaign Monterey County Gives! raised over $4.7 million in six weeks, thanks to nearly 5,000&nbsp;donors. Since its inception, the program has raised and donated over $17 million to over 400 local nonprofits.</p>
+          <h3><strong><strong>$1,324,444 in Matching and Challenge Gifts!</strong></strong></h3>
+          <p>Collaboration. Partnership.&nbsp;Synergy. These are the keys to MC GIVES!</p>
+          <p>The campaign is a partnership between the Weekly, the Community Foundation for Monterey County and the Monterey Peninsula Foundation. Coupled with the generosity of our major supporters — the Neumeier Poma Investment Counsel, Cannery
+            Row Company, the David and Lucille Packard Foundation and the Colburn and Alana Jones Foundation at CFMC — &nbsp;MCGIVES! kicks off with an overall Matching Fund of over $450,000.</p>
+          <p>Many participating nonprofits stepped up and raised Challenge Gifts from key supporters, to spur more giving and new donors from the community&nbsp;— over $874,000 to kick-off this year’s campaign.</p>
+          <p>Combined &nbsp;Monterey County Gives! has over $1.3 million in Matching and Challenge Gifts.</p>
+          <h3><strong>MCGIVES! runs through&nbsp;midnight December 31.&nbsp;</strong></h3>
+          <p>We invite you to join in this great program, become a donor, even help spread the word. If you would, pass along the print issue of Monterey County Gives!&nbsp;to a friend or co-worker. Use the social media tools on this website to post
+            your message to Facebook or Tweet about Monterey County Gives! Every bit helps. We’re in this together, and can collectively create positive change for all of us who call Monterey County home.</p>
+          <h3>Feel the Love. Click <a href="https://www.montereycountygives.com/donate/">DONATE</a> to&nbsp;make a tax-free donation.</h3>
+          <h4>Thank you.</h4>
+          <p>Bradley Zeve, Monterey County Weekly<br>
+            Dan Baldwin, Community Foundation for Monterey County<br>
+            Steve John, Monterey Peninsula Foundation</p>
+        </div>
+        <div class="col-4 home-logos">
+          <img src="https://www.montereycountygives.com/wp-content/uploads/2015/10/mc-weekly.png" alt="">
+          <img src="https://www.montereycountygives.com/wp-content/uploads/2015/10/cfmc_logo.png" alt="">
+          <img src="https://www.montereycountygives.com/wp-content/uploads/2015/10/montereypeninsulafoundation.png" alt="">
+          <img src="https://www.montereycountygives.com/wp-content/uploads/2015/10/david-lucile-packard.png" alt="">
+          <img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/image001.jpeg" alt="">
+          <img src="https://www.montereycountygives.com/wp-content/uploads/2015/10/cannery-row-company.png" alt="">
+          <img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/colburn-alana-jones_logo.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="latest-news">
+    <div class="container">
+      <h3>News</h3>
+      <div class="row">
+        <div class="col-4">
+          <article>
+            <span class="the-date">12.20.18</span>
+
+            <h4><a href="https://www.montereycountygives.com/news/spotlight-pajaro-valley-prevention-and-student-assistance/">SPOTLIGHT: Pajaro Valley Prevention and Student Assistance</a></h4>
+            <p></p>
+            <p>While students get new teachers every year, some adult figures remain steady. Matthew Merrill is a mental health clinician who works with middle – and high-school students in the Pajaro Valley Unified School District. “These
+              relationships last for years and I think for a lot of these kids, having a consistent, healthy adult figure in […]<a class="read-more" href="https://www.montereycountygives.com/news/spotlight-pajaro-valley-prevention-and-student-assistance/">
+                Read more</a></p>
+            <p></p>
+          </article>
+        </div>
+        <div class="col-4">
+          <article>
+            <span class="the-date">12.13.18</span>
+
+            <h4><a href="https://www.montereycountygives.com/news/spotlight-golden-oldies-cat-rescue/">SPOTLIGHT: Golden Oldies Cat Rescue</a></h4>
+            <p></p>
+            <p>Margaret Slaby lives in a small home, but she makes room for a dog and four cats. What she needs now is more room – not for herself or her pets, but for dozens of older cats in need of new homes. Golden Oldies Cat Rescue is a
+              nonprofit that provides foster homes for cats […]<a class="read-more" href="https://www.montereycountygives.com/news/spotlight-golden-oldies-cat-rescue/"> Read more</a></p>
+            <p></p>
+          </article>
+        </div>
+        <div class="col-4">
+          <article>
+            <span class="the-date">12.07.18</span>
+
+            <h4><a href="https://www.montereycountygives.com/news/spotlight-ncbi/">SPOTLIGHT: NCBI</a></h4>
+            <p></p>
+            <p>There are a lot of issues that can drive people away from the table, so to speak. Mass shootings, the rise of hate crimes and, of course, politics – the list goes on. But on an overcast Saturday afternoon, at least 40 people show up
+              to the Marina Library for what the National Coalition Building […]<a class="read-more" href="https://www.montereycountygives.com/news/spotlight-ncbi/"> Read more</a></p>
+            <p></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-2"><img class="mcw-logo" src="assets/images/mc-weekly02.png" alt="MC Weekly"></div>
+        <div class="col-5">
+          <p>Monterey County Gives! is a special project of<br>
+            Monterey County Weekly, in partnership with the Community Foundation for Monterey County.</p>
+        </div>
+        <div class="col-2">
+          <div class="menu-mc_gives-container">
+            <ul id="menu-mc_gives-1" class="site-map">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="/nonprofits/">Meet Our Nonprofits</a></li>
+              <li class="menu-more menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-145"><a href="#">How does it work?</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="/donate/">Donate</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="/partners-sponsors/">Sponsors/Partners</a></li>
+                </ul>
+              </li>
+              <li class="menu-more menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-805"><a href="#">Leaderboard</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-803"><a href="/leaderboard/donation-amount/">Total Donations</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1109"><a href="/leaderboard/number-of-donors/">Number of Donors</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-801"><a href="/leaderboard/total-young-donors/">Total Young Donors</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="/faqs/">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3" style="text-align: center;"><img style="max-width: 170px; border-radius: 3px; display: block; margin: 18px auto 0 auto; height: auto; margin-bottom: 10px;" src="assets/images/cfmc-logo.jpg" alt=""><br>
+          <img style="max-width: 100px; border-radius: 3px; height: auto;" src="assets/images/mpf-logo.jpg" alt=""></div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
