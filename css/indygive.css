@@ -2524,6 +2524,14 @@ a.give-special {
   font-weight: 400;
 }
 
+.paragraph-bottom-space{
+  margin-bottom: 48px;
+}
+.mas-location{
+  float: left;
+}
+
+
 /* ==========================================================================
    Boost reward box modifications
    ========================================================================== */

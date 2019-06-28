@@ -1,11 +1,207 @@
-<section>
-  <div class="container">
-    <div class="masthead">
-      <h1></h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Indy Gives</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/style.css?v=1.01.02">
+  <link rel="stylesheet" href="css/indygive.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+
+<body>
+  <!-- Menu -->
+  <header role="banner">
+    <div class="container">
+      <span class="countdown-text">TIME REMAINING<br>TO GIVE</span>
+      <span id="countdown">
+        <div class="cd-segment days">
+          <span>00</span>
+          <span class="countdown-label">days</span>
+        </div>
+        <div class="cd-segment hours">
+          <span>00</span>
+          <span class="countdown-label">hr</span>
+        </div>
+        <div class="cd-segment mins">
+          <span>00</span>
+          <span class="countdown-label">min</span>
+        </div>
+        <div class="cd-segment secs">
+          <span>00</span>
+          <span class="countdown-label">sec</span>
+        </div>
+      </span>
+      <a href="#" class="logo">
+        <img src="assets/images/indygive-logo.png" alt="">
+      </a>
+
+      <a class="navicon" href="#"><i class="icon-bars"></i></a>
+      <nav class="main-nav" role="navigation">
+        <div class="menu-mc_gives-container">
+          <ul id="menu-mc_gives" class="menu">
+            <li id="menu-item-5369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5369"><a href="nonprofits.html">Meet Our Nonprofits</a></li>
+            <li id="menu-item-145" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-145"><a>How does it work?</a>
+              <ul class="sub-menu">
+                <li id="menu-item-6931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6931"><a href="how-to-donate.html">How to donate</a></li>
+                <li id="menu-item-6932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6932"><a href="donate.html">Donate</a></li>
+                <li id="menu-item-2530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2530"><a href="archive-partners.html">Sponsors/Partners</a></li>
+                <li id="menu-item-6933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6933"><a href="rewards.html">Rewards</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-805" class="menu-more menu-item menu-item-type- menu-item-object- menu-item-has-children menu-item-805"><a>Leaderboard</a>
+              <ul class="sub-menu">
+                <li id="menu-item-6934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6934"><a href="donation-amount.html">Total Donations</a></li>
+                <li id="menu-item-6936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6936"><a href="number-of-donors.html">Number of Donors</a></li>
+                <li id="menu-item-6935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6935"><a href="total-young-donors.html">Total Young Donors</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-6937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6937"><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </div> <a class="cart-btn" href="/donate"><i class="icon-shopping-cart" aria-hidden="true"></i><span class="visuallyhidden">View cart</span></a>
+
+        <!-- search button -->
+        <a class="search-pop" href="#search-pop"><i class="icon-search" aria-hidden="true"></i></a>
+        <!-- //search button -->
+      </nav>
     </div>
-    <div class="row">
-      <div class="col-12">
+    <div class="sidebar-fav sidebar-position" >
+      <div class="sidebar">
+        <div class="favbar">
+          <a class="fav-toggle" href="#">
+            <i class="icon-heart" aria-hidden="true"></i>
+          </a>
+          <div class="upper">
+            <div class="favorite-links-list favorites" id="fav-flyout">
+              <h4 class="sidebar-align">Favorite Nonprofits</h4>
+              <div id="favorite-links-list-flyout" class="favorite-list favorite-div">
+                <div class="favorite_link" data-id="5191">
+                  <a href="#">Non-Profit Name</a>
+                  <span class="delete_from_favorites" data-id="5191"> x </span>
+                  <br><br>
+                </div>
+                <div class="favorite_link" data-id="4974">
+                  <a href="#">Non-Profit Name</a>
+                  <span class="delete_from_favorites" data-id="4974"> x </span>
+                  <br><br>
+                </div>
+              </div>
+              <div class="favorites-loading-list"></div>
+              <div class="sidebar-align sidebar-bottom sidebar-position" >
+                Click or tap on any nonprofit to view their profile or to donate.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </header>
+  <!-- End of Menu -->
+
+
+
+  <section>
+    <div class="container">
+      <div class="masthead">
+        <h1>Title</h1>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking
+            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+            'Content here, content here', making it look like readable English.
+          </p>
+        </div>
+        <div>
+          <h3>What is Lorem Ipsum?</h3>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+            'Content here, content here', making it look like readable English. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img class="indy-logo" src="assets/images/indygive-logo.png" alt="MC Weekly">
+          </div>
+
+          <div class="col-4">
+            <ul class="site-map">
+              <li><a href="/">Nonprofits</a></li>
+              <li><a href="/">Contact</a></li>
+              <li><a href="/">FAQS</a></li>
+              <li><a href="/">Donate</a></li>
+              <li><a href="/">2018 Give! Campaign Application</a></li>
+            </ul>
+          </div>
+
+          <div class="col-4">
+            <span class="footer-contact">719.577.4545 |
+              <a href="mailto:give@csindy.com">GIVE@CSINDY.COM</a>
+            </span>
+          </div>
+
+          <div class="col-2">
+            <div class="footer-sm">
+              <a href="https://www.facebook.com/IndyGive/" target="_blank" rel="noopener">
+                <img src="assets/images/icons/icon-facebook.png" alt="Facebook" width="45" height="45">
+              </a>
+              <a href="https://twitter.com/indygive" target="_blank" rel="noopener">
+                <img src="assets/images/icons/icon-twitter.png" alt="Twitter" width="45" height="45">
+              </a>
+              <a href="https://www.youtube.com/user/indygive" target="_blank" rel="noopener">
+                <img src="assets/images/icons/icon-youtube.png" alt="YouTube" width="45" height="45">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>© 2018 Indy Give</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper" class="remodal-bg remodal-is-closed"></div>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--Text Carousel-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/site.js"></script>
+
+    <!-- Donate Masonry Grid -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </footer>
+  <!--End of Footer -->
+</body>
+
+</html>
