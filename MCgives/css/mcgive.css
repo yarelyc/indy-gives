@@ -5381,6 +5381,28 @@ ul.totals .days-left {
     background-repeat: no-repeat
 }
 
+/* New 2019 (Home)*/
+.slider-home{
+  display: block;
+  opacity: 1;
+}
+.slider-transform{
+  display: block;
+  width: 22400px;
+  left: 0px;
+  transition: all 800ms ease 0s;
+  transform: translate3d(-8400px, 0px, 0px);
+}
+.slider-width{
+  width: 1400px;
+}
+.slider-position{
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:999;
+}
+
 @media only screen and (max-width: 768px) {
     .home-slider .item {
         min-height: 350px
