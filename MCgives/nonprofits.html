@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Indy Gives</title>
+  <title>Monterey County Gives!</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,21 +20,22 @@
 </head>
 
 <body>
-  <section class="page-content page-119">
+  <section>
     <div class="container">
       <div class="masthead">
         <a class="donate-btn" href="https://www.montereycountygives.com/donate">Donate<span id="top-total" style="display:none;">Total: <span></span></span></a>
         <h1>Nonprofits</h1>
       </div>
 
+      <!-- Sidebar -->
       <div class="row">
         <div class="col-3 left-sidebar">
           <nav class="subnav non-profit-side">
             <ul>
               <li><a href="https://www.montereycountygives.com/nonprofit_category/animals">
-                  <div style="display: flex;">
-                    <div style=" width: 25%; margin:.25em;"><img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/icon-animals.png"></div>
-                    <div style=" width: 75%;"><strong>Animals</strong><br>
+                  <div class="np-display">
+                    <div class="np-icon-size"><img src="assets/images/icons/icon-animals.png"></div>
+                    <div class="np-icon-width"><strong>Animals</strong><br>
                       <p>11 Nonprofits</p>
                       <p>1076 Donors</p>
                       <p>$552,898.89 in Donations</p>
@@ -42,9 +43,9 @@
                   </div>
                 </a></li>
               <li><a href="https://www.montereycountygives.com/nonprofit_category/arts-and-culture">
-                  <div style="display: flex;">
-                    <div style=" width: 25%; margin:.25em;"><img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/icon-arts-and-culture.png"></div>
-                    <div style=" width: 75%;"><strong>Arts &amp; Culture</strong><br>
+                  <div class="np-display">
+                    <div class="np-icon-size"><img src="assets/images/icons/icon-arts-and-culture.png"></div>
+                    <div class="np-icon-width"><strong>Arts &amp; Culture</strong><br>
                       <p>36 Nonprofits</p>
                       <p>977 Donors</p>
                       <p>$596,902.81 in Donations</p>
@@ -52,9 +53,9 @@
                   </div>
                 </a></li>
               <li><a href="https://www.montereycountygives.com/nonprofit_category/community-and-social-service">
-                  <div style="display: flex;">
-                    <div style=" width: 25%; margin:.25em;"><img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/icon-community-and-social-service.png"></div>
-                    <div style=" width: 75%;"><strong>Community &amp; Social Service</strong><br>
+                  <div class="np-display">
+                    <div class="np-icon-size"><img src="assets/images/icons/icon-community-and-social-service.png"></div>
+                    <div class="np-icon-width"><strong>Community &amp; Social Service</strong><br>
                       <p>42 Nonprofits</p>
                       <p>1291 Donors</p>
                       <p>$807,522.96 in Donations</p>
@@ -62,9 +63,9 @@
                   </div>
                 </a></li>
               <li><a href="https://www.montereycountygives.com/nonprofit_category/education-and-youth">
-                  <div style="display: flex;">
-                    <div style=" width: 25%; margin:.25em;"><img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/icon-education-and-youth.png"></div>
-                    <div style=" width: 75%;"><strong>Education &amp; Youth</strong><br>
+                  <div class="np-display">
+                    <div class="np-icon-size"><img src="assets/images/icons/icon-education-and-youth.png"></div>
+                    <div class="np-icon-width"><strong>Education &amp; Youth</strong><br>
                       <p>42 Nonprofits</p>
                       <p>1096 Donors</p>
                       <p>$973,404.52 in Donations</p>
@@ -72,9 +73,9 @@
                   </div>
                 </a></li>
               <li><a href="https://www.montereycountygives.com/nonprofit_category/environment-and-sustainability">
-                  <div style="display: flex;">
-                    <div style=" width: 25%; margin:.25em;"><img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/icon-environment-and-sustainability.png"></div>
-                    <div style=" width: 75%;"><strong>Environment &amp; Sustainability</strong><br>
+                  <div class="np-display">
+                    <div class="np-icon-size"><img src="assets/images/icons/icon-environment-and-sustainability.png"></div>
+                    <div class="np-icon-width"><strong>Environment &amp; Sustainability</strong><br>
                       <p>14 Nonprofits</p>
                       <p>754 Donors</p>
                       <p>$352,455.88 in Donations</p>
@@ -82,9 +83,9 @@
                   </div>
                 </a></li>
               <li><a href="https://www.montereycountygives.com/nonprofit_category/health-wellness-and-food">
-                  <div style="display: flex;">
-                    <div style=" width: 25%; margin:.25em;"><img src="https://www.montereycountygives.com/wp-content/uploads/2018/11/icon-health-wellness-and-food.png"></div>
-                    <div style=" width: 75%;"><strong>Health, Wellness &amp; Food</strong><br>
+                  <div class="np-display">
+                    <div class="np-icon-size"><img src="assets/images/icons/icon-health-wellness-and-food.png"></div>
+                    <div class="np-icon-width"><strong>Health, Wellness &amp; Food</strong><br>
                       <p>25 Nonprofits</p>
                       <p>942 Donors</p>
                       <p>$678,805.49 in Donations</p>
@@ -97,140 +98,136 @@
           <div class="side-search">
             <form method="get" id="searchform" class="searchform" action="https://www.montereycountygives.com/" role="search">
               <input type="search" class="field" name="s" value="" id="s" placeholder="Search...">
-              <input type="image" src="https://www.montereycountygives.com/wp-content/themes/mc-gives/images/search_icon.png" class="submit" id="searchsubmit" value="Search">
-            </form><span style="position:absolute;visibility:collapse;"><a href="http://rusbankinfo.ru">займы онлайн</a><a href="http://rusbankinfo.ru/credits.html">кредит наличными</a></span>
+              <input type="image" src="assets/images/search_icon.png" class="submit" id="searchsubmit" value="Search">
+            </form>
           </div>
 
           <h5 class="favorites-title">Favorites</h5>
           <p class="favorites-info">You have <span class="favorite_amount">0</span> favorites</p>
           <div id="favorite-links-list">
           </div>
-
-
-
+          <!--End of Sidebar -->
         </div>
-        <div class="col-9">
 
+
+        <div class="col-9">
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/my-museum/">
               <img width="448" height="300" src="https://www.montereycountygives.com/wp-content/uploads/2018/07/mym-kids-11-130-1-448x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/07/mym-kids-11-130-1-448x300.jpg 448w, https://www.montereycountygives.com/wp-content/uploads/2018/07/mym-kids-11-130-1-768x514.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/07/mym-kids-11-130-1-1024x686.jpg 1024w"
                 sizes="(max-width: 448px) 100vw, 448px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">MY Museum</h3>
-
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <h3 class="np-title np-title-padding">MY Museum</h3>
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>1997</strong><br> Paid Staff: <strong>15</strong><br> Volunteers: <strong>50</strong><br> Budget: <strong>$550,300.00</strong><br> Phone: <strong>(831) 649-6444</strong><br>
-
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15565" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15565">&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/communities-for-sustainable-monterey-county-csmc/">
               <img width="259" height="194" src="https://www.montereycountygives.com/wp-content/uploads/2018/08/treeImageForGives.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/08/treeImageForGives.jpg 259w, https://www.montereycountygives.com/wp-content/uploads/2018/08/treeImageForGives-200x150.jpg 200w"
                 sizes="(max-width: 259px) 100vw, 259px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">Communities for Sustainable Monterey County (CSMC)</h3>
+              <h3 class="np-title np-title-padding ">Communities for Sustainable Monterey County (CSMC)</h3>
 
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>2005</strong><br> Paid Staff: <strong>0</strong><br> Volunteers: <strong>145</strong><br> Budget: <strong>$45,681.00</strong><br> Phone: <strong>(831) 643-0707</strong><br>
 
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15424" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15424" >&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/gateway-center/">
               <img width="333" height="300" src="https://www.montereycountygives.com/wp-content/uploads/2018/11/mc-gives-2018-333x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/11/mc-gives-2018-333x300.jpg 333w, https://www.montereycountygives.com/wp-content/uploads/2018/11/mc-gives-2018-768x691.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/11/mc-gives-2018-1024x922.jpg 1024w, https://www.montereycountygives.com/wp-content/uploads/2018/11/mc-gives-2018.jpg 1300w"
                 sizes="(max-width: 333px) 100vw, 333px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">Gateway Center</h3>
+              <h3 class="np-title np-title-padding">Gateway Center</h3>
 
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>1963</strong><br> Paid Staff: <strong>90</strong><br> Volunteers: <strong>12</strong><br> Budget: <strong>$466,774,662.00</strong><br> Phone: <strong>(831) 372-8002</strong><br>
 
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15615" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15615" >&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/bay-view-academy-or-bva/">
               <img width="400" height="300" src="https://www.montereycountygives.com/wp-content/uploads/2018/07/31905645_1888672054490658_8857648390415056896_n-1-400x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/07/31905645_1888672054490658_8857648390415056896_n-1-400x300.jpg 400w, https://www.montereycountygives.com/wp-content/uploads/2018/07/31905645_1888672054490658_8857648390415056896_n-1-200x150.jpg 200w, https://www.montereycountygives.com/wp-content/uploads/2018/07/31905645_1888672054490658_8857648390415056896_n-1-768x576.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/07/31905645_1888672054490658_8857648390415056896_n-1.jpg 960w"
                 sizes="(max-width: 400px) 100vw, 400px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">Bay View Academy or BVA</h3>
+              <h3 class="np-title np-title-padding">Bay View Academy or BVA</h3>
 
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>2011</strong><br> Paid Staff: <strong>52</strong><br> Volunteers: <strong>400</strong><br> Phone: <strong>(831) 717-4630</strong><br>
 
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15545" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15545" >&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/celadon-arts/">
               <img width="500" height="280" src="https://www.montereycountygives.com/wp-content/uploads/2018/07/6.-Self-Port-as-Sea-Mons-1-500x280.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/07/6.-Self-Port-as-Sea-Mons-1-500x280.jpg 500w, https://www.montereycountygives.com/wp-content/uploads/2018/07/6.-Self-Port-as-Sea-Mons-1-768x430.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/07/6.-Self-Port-as-Sea-Mons-1-1024x573.jpg 1024w"
                 sizes="(max-width: 500px) 100vw, 500px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">Celadon Arts</h3>
+              <h3 class="np-title np-title-padding">Celadon Arts</h3>
 
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>1989</strong><br> Paid Staff: <strong>0</strong><br> Volunteers: <strong>3</strong><br> Phone: <strong>(202) 494-0987</strong><br>
 
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15519" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15519" >&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/chamber-music-monterey-bay/">
               <img width="450" height="300" src="https://www.montereycountygives.com/wp-content/uploads/2018/07/TUN_2976-1-1-450x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/07/TUN_2976-1-1-450x300.jpg 450w, https://www.montereycountygives.com/wp-content/uploads/2018/07/TUN_2976-1-1-768x512.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/07/TUN_2976-1-1-1024x683.jpg 1024w"
                 sizes="(max-width: 450px) 100vw, 450px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">Chamber Music Monterey Bay</h3>
+              <h3 class="np-title np-title-padding">Chamber Music Monterey Bay</h3>
 
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>1966</strong><br> Paid Staff: <strong>2</strong><br> Volunteers: <strong>14</strong><br> Budget: <strong>$298,873.00</strong><br> Phone: <strong>(831) 625-2212</strong><br>
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15686" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15686" >&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/one-starfish-safe-parking-and-supportive-services/">
               <img width="400" height="300" src="https://www.montereycountygives.com/wp-content/uploads/2018/11/2018-One-Starfish-Safe-400x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/11/2018-One-Starfish-Safe-400x300.jpg 400w, https://www.montereycountygives.com/wp-content/uploads/2018/11/2018-One-Starfish-Safe-200x150.jpg 200w, https://www.montereycountygives.com/wp-content/uploads/2018/11/2018-One-Starfish-Safe-768x576.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/11/2018-One-Starfish-Safe.jpg 1000w"
                 sizes="(max-width: 400px) 100vw, 400px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">One Starfish Safe Parking and Supportive Services</h3>
+              <h3 class="np-title np-title-padding">One Starfish Safe Parking and Supportive Services</h3>
 
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>2007</strong><br> Paid Staff: <strong>6</strong><br> Volunteers: <strong>12</strong><br> Budget: <strong>$210,000.00</strong><br> Phone: <strong>(843) 276-7655</strong><br>
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15404" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15404" >&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/sunset-cultural-center/">
               <img width="375" height="300" src="https://www.montereycountygives.com/wp-content/uploads/2018/11/IMG_948-375x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/11/IMG_948-375x300.jpg 375w, https://www.montereycountygives.com/wp-content/uploads/2018/11/IMG_948-768x614.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/11/IMG_948-1024x819.jpg 1024w, https://www.montereycountygives.com/wp-content/uploads/2018/11/IMG_948.jpg 1500w"
                 sizes="(max-width: 375px) 100vw, 375px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">Sunset Cultural Center</h3>
+              <h3 class="np-title np-title-padding">Sunset Cultural Center</h3>
 
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>2003</strong><br> Paid Staff: <strong>21</strong><br> Volunteers: <strong>185</strong><br> Budget: <strong>$2,936,371.00</strong><br> Phone: <strong>(831) 620-2040</strong><br>
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15591" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15591" >&nbsp;</h5>
           </div>
 
           <div class="np-box">
             <a href="https://www.montereycountygives.com/nonprofit/coalition-of-homeless-services-providers/">
               <img width="500" height="143" src="https://www.montereycountygives.com/wp-content/uploads/2018/08/slide2-500x143.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.montereycountygives.com/wp-content/uploads/2018/08/slide2-500x143.jpg 500w, https://www.montereycountygives.com/wp-content/uploads/2018/08/slide2-768x220.jpg 768w, https://www.montereycountygives.com/wp-content/uploads/2018/08/slide2-1024x293.jpg 1024w"
                 sizes="(max-width: 500px) 100vw, 500px">
-              <h3 class="np-title" style="margin: 0; padding: 13px 0;">Coalition of Homeless Services Providers</h3>
-
-              <p class="np-info" style="margin: 0; padding: 0 0 10px 0;">
+              <h3 class="np-title np-title-padding">Coalition of Homeless Services Providers</h3>
+              <p class="np-info np-info-padding">
                 Year Founded: <strong>1994</strong><br> Paid Staff: <strong>4</strong><br> Volunteers: <strong>210</strong><br> Budget: <strong>$698,850.00</strong><br> Phone: <strong>(831) 883-3080</strong><br>
               </p>
             </a>
-            <h5 class="favorites-title np_favorite" data-id="15720" style="float: right;">&nbsp;</h5>
+            <h5 class="favorites-title np_favorite" data-id="15720">&nbsp;</h5>
           </div>
         </div>
       </div>

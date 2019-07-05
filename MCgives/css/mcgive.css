@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 ::-moz-selection {
@@ -3537,7 +3537,7 @@ only screen and (min-resolution: 1.5dppx) {
 .container {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 0 78px;
+    /* padding: 0 78px; */
     box-sizing: border-box
 }
 
@@ -4533,12 +4533,13 @@ blockquote em {
     width: 100%;
     text-align: right;
     cursor: pointer;
+    padding-bottom: 10px;
     padding-top: 6px
 }
 
 .favorites-title {
     display: inline-block;
-    background-image: url("images/fav-heart.png");
+    background-image: url("../assets/images/fav-heart.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 15px auto;
@@ -4550,7 +4551,7 @@ blockquote em {
 
 .favorites-title:hover,
 .favorites-title.favored {
-    background-image: url("images/fav-heart-solid.png")
+    background-image: url("../assets/images/fav-heart-solid.png")
 }
 
 .np-title {
@@ -4563,6 +4564,33 @@ blockquote em {
 .np-info {
     font-size: 0.8125em
 }
+
+/* New 2019 (Nonprofit) */
+.np-display{
+  display: flex;
+}
+
+.np-icon-size{
+  width: 25%;
+  margin:.25em;
+}
+
+.np-icon-width{
+  width: 75%;
+}
+
+.np-title-padding{
+  margin: 0;
+  padding: 13px 0;
+}
+
+.np-info-padding{
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+/* End New 2019 (Nonprofit) */
+
 
 .left-sidebar {
     font-size: 0.875em
@@ -5378,7 +5406,7 @@ ul.totals .days-left {
     min-height: 500px;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 /* New 2019 (Home)*/
@@ -5401,6 +5429,22 @@ ul.totals .days-left {
   height:100%;
   position:absolute;
   z-index:999;
+}
+.position-center{
+  text-align: center;
+}
+.footer-image-size{
+  max-width: 170px;
+  border-radius: 3px;
+  display: block;
+  margin: 18px auto 0 auto;
+  height: auto;
+  margin-bottom: 10px;
+}
+.footer-image-size2{
+  max-width: 100px;
+  border-radius: 3px;
+  height: auto;
 }
 
 @media only screen and (max-width: 768px) {
