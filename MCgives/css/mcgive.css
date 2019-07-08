@@ -4638,6 +4638,12 @@ blockquote em {
     margin-bottom: 1em
 }
 
+/* New 2019 Single-nonprofit page */
+.spinning-gear-position{
+    margin-left: 10px;
+    display: none;
+}
+
 .small-title {
     font-size: 0.875em;
     font-weight: 700;
