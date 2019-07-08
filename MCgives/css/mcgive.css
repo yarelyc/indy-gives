@@ -4647,12 +4647,12 @@ blockquote em {
 /* End New 2019 Single-nonprofit page */
 
 
-/* New 2019 Page */
+/* New 2019 (FAQs) Page */
 .faq-container h1{
     font-weight: 700;
 }
 
-.masthead h1{
+.faq-title h1{
     font-weight: 700;
 }
 /* end New 2019 Page */
@@ -5144,6 +5144,55 @@ ul.totals .days-left {
     right: 0
 }
 
+/* New 2019 Donate */
+.dv_donate_item {
+    display: flex;
+}
+
+.np-donate-lb {
+    margin-left: 5px;
+    display: inline-block;
+    width: 65%;
+    /* text-align: center; */
+}
+
+.np-donate-amt {
+    width: 30%;
+    margin: auto;
+}
+
+.paragraph-position{
+  display: inline-block;
+  width: 0px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.col-9-position{
+   position: relative;
+   height: 10081px;
+}
+.np-donate-position{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.np-donate-position2{
+   position: absolute;
+   left: 0px;
+   top: 2637px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .np-donate-category {
+        width: 100%;
+        float: none;
+    }
+}
+/* End New 2019 Donate */
+
+
 .cart-note {
     border-bottom: 1px solid #e2e2e2;
     margin-bottom: 5px;
@@ -5234,6 +5283,34 @@ ul.totals .days-left {
     top: 22px;
     font-size: 0.75em
 }
+
+/* New 2019 Checkout page */
+.single-container-width{
+   width: 194px;
+}
+.single-chosen-width{
+   width: 0px;
+}
+.input-width{
+   width: 20%;
+}
+.cardImage{
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+.privacy-position{
+  background: #E2E2E2;
+  margin-top: 10px;
+  padding: 10px;
+  color: #626262;
+  font-size: .85em;
+}
+.terms-position{
+  top: 0px;
+}
+/* End New 2019 Checkout page */
+
 
 .page-id-55 .np-donate-amt {
     margin: 10px
