@@ -4644,6 +4644,19 @@ blockquote em {
     display: none;
 }
 
+/* End New 2019 Single-nonprofit page */
+
+
+/* New 2019 Page */
+.faq-container h1{
+    font-weight: 700;
+}
+
+.masthead h1{
+    font-weight: 700;
+}
+/* end New 2019 Page */
+
 .small-title {
     font-size: 0.875em;
     font-weight: 700;
