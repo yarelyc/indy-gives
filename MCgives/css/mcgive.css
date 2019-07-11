@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 1em;
 }
 
 ::-moz-selection {
@@ -1175,7 +1175,7 @@ only screen and (min-resolution: 1.5dppx) {
 @font-face {
     font-family: 'gives-font';
     src: url("../fonts/gives-font.eot?-bk87z2");
-    src: url("../fonts/gives-font.eot?#iefix-bk87z2") format("embedded-opentype"), url("fonts/gives-font.ttf?-bk87z2") format("truetype"), url("fonts/gives-font.woff?-bk87z2") format("woff"), url("fonts/gives-font.svg?-bk87z2#gives-font") format("svg");
+    src: url("../fonts/gives-font.eot?#iefix-bk87z2") format("embedded-opentype"), url("../fonts/gives-font.ttf?-bk87z2") format("truetype"), url("../fonts/gives-font.woff?-bk87z2") format("woff"), url("../fonts/gives-font.svg?-bk87z2#gives-font") format("svg");
     font-weight: normal;
     font-style: normal
 }
@@ -4069,8 +4069,8 @@ nav ul {
 
 a.cart-btn {
     position: absolute;
-    bottom: 3px;
-    right: 80px;
+    bottom: 5px;
+    right: 25px;
     line-height: 1;
     color: #F1582A;
     text-decoration: none;
