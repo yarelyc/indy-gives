@@ -14,7 +14,7 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/mcgive.css">
   <link rel="stylesheet" href="css/2017.css">
-
+  
 </head>
 
 <body>
@@ -559,4 +559,66 @@
       </div>
     </div>
   </section>
+
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('.cvv-tooltip').click(function (event) {
+              event.preventDefault();
+          });
+          $('.cvv-tooltip').tooltipster({
+              content: $('<span><img src="https://mcgivesstaging.wpengine.com/wp-content/themes/mc-gives/images/cvv.gif" /></span>'),
+              theme: 'tooltipster-light'
+          });
+
+          $('input[name="gifttype"]').change(function () {
+              if ($(this).val() == 2) {
+                  $('div#subform_iho').show();
+                  $('div#subform_imo').hide();
+              } else if ($(this).val() == 3) {
+                  $('div#subform_imo').show();
+                  $('div#subform_iho').hide();
+              } else {
+                  $('div#subform_imo').hide();
+                  $('div#subform_iho').hide();
+              }
+          });
+
+      });
+      $(document).ready(function () {
+
+
+             $("#reward_email").hide();
+          $('.receive-rewards').click(function () {
+
+              if ($(this).val() == 'give_rewards') {
+                  $("#reward_email").show();
+
+              } else {
+                  $("#reward_email").hide();
+
+              }
+          });
+
+
+          $("#c_year_born").change(function () {
+              var donat_year = $(this).val();
+              var current_date = new Date();
+              var currentYear = current_date.getFullYear();
+              var age = currentYear - donat_year;
+              if (age >= 18 && age <= 35) {
+                  $("#young_donor").val(1);
+              } else {
+                  $("#young_donor").val(0);
+              }
+          })
+          $( "#c_year_born" ).keypress(function() {
+              console.log("keypress" );
+          });
+
+
+          $("#ui-datepicker-div").hide();
+
+      });
+  </script>
+
 </body>
