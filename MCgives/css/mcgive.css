@@ -3751,7 +3751,7 @@ header[role="banner"] {
 
 header[role="banner"] .donate-btn {
     position: absolute;
-    right: 83px;
+    right: 25px;
     top: 0;
     font-size: 1.125em;
     background: #F1582A
@@ -3789,7 +3789,7 @@ header[role="banner"] .container {
 }
 
 .home .header-search {
-    margin-right: 313px
+    margin-right: 315px
 }
 
 @media only screen and (max-width: 1070px) {
@@ -3856,7 +3856,7 @@ header[role="banner"] .container {
 }
 
 .home #countdown {
-    right: 220px
+    right: 160px
 }
 
 @media only screen and (max-width: 860px) {
@@ -4838,8 +4838,9 @@ blockquote em {
     display: inline-block;
     background: #52429B;
     color: #FFF;
-    padding: 5px 25px;
+    padding: 10px 25px;
     font-weight: 400;
+    font-size: 2em;
     margin: 0 0 1em 0
 }
 
@@ -6096,6 +6097,10 @@ footer p {
     padding: 0;
     font-size: 0.75em;
     margin: 17px -10px 0 0
+}
+
+.site-map a{
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 640px) {
