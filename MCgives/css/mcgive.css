@@ -3768,6 +3768,9 @@ header[role="banner"] .donate-btn {
     header[role="banner"] .donate-btn {
         right: 0
     }
+
+
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -3839,11 +3842,23 @@ header[role="banner"] .container {
     width: 400px
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
     .logo img {
-        width: 245px
+        width: 225px
     }
 }
+
+@media only screen and (max-width: 520px) {
+
+    .logo {
+        margin: 10px 0 10px 0;
+    }
+
+    .logo img {
+        width: 165px
+    }
+}
+
 
 #countdown {
     position: absolute;
@@ -3859,21 +3874,17 @@ header[role="banner"] .container {
     right: 160px
 }
 
-@media only screen and (max-width: 860px) {
-    .home #countdown {
-        display: none
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    #countdown {
-        right: 20px
+    .home #countdown {
+        right: 100px;
     }
 }
 
 @media only screen and (max-width: 640px) {
-    #countdown {
-        display: none
+    .home #countdown {
+        right: 35px;
+        padding: 6px;
+        font-size: 12px;
     }
 }
 
