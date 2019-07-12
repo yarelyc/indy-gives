@@ -3884,7 +3884,7 @@ header[role="banner"] .container {
 
 @media only screen and (max-width: 640px) {
     .home #countdown {
-        right: 35px;
+        right: 50px;
         padding: 6px;
         font-size: 12px;
     }
